@@ -78,7 +78,7 @@ hash = "6fbf05e2719f095908f8196a694f6a8f36bc39c7d5e71644b0ea55e025c8b80f"
 
 [[files]]
 file = "config/apotheosis/enchantments.cfg"
-hash = "430d4e07972704c94d3597aa3583d0db7b1941d2eea4b243af905f9fb06b6417"
+hash = "e168876ab9bdbe6129c502f069e12a4287c11cfe2dcb49c1bf190e01483700c7"
 
 [[files]]
 file = "config/apotheosis/garden.cfg"
@@ -250,7 +250,7 @@ hash = "9d31e00a40469de93a098efe7a69b8fdcacf101cfa2c8358219462f7bef5c3fb"
 
 [[files]]
 file = "config/carbonconfig.cfg"
-hash = "3bdc94ad3be5406b5d5628791945327f43fbb7992db5f86ae51af8b4be64f212"
+hash = "82cbfe414485e95aac0b6fbf731225c533a00c0bfb8c037daf4ee9e3494be8ad"
 
 [[files]]
 file = "config/carryon-client.toml"
@@ -390,7 +390,7 @@ hash = "9456dfbd7c2f49440f26467438286daeb9816d290a5f131f88d1c6c94b421919"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
-hash = "0370231acb762cc45eff16cf6f749f0bc4a7f6adbbaba8079bef9f695f1bb40d"
+hash = "7b0ce50ea6a461b233afbb0547a76ac1cfc9717f032623b947da880885b24c53"
 
 [[files]]
 file = "config/embeddium-mixins.properties"
@@ -398,7 +398,7 @@ hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "b78e1a745d5080dc2e50dd192982aeb59f32b1645626b77ac38a2b725ea52122"
+hash = "b4b0aaec74cd2c37a2d0d384a4195768d8d7cbc9f86c7d993694e394fa35664d"
 preserve = true
 
 [[files]]
@@ -443,7 +443,7 @@ hash = "24778eafab43d7a4d742572aee3e1b85ee04b5c3fdd88cd713139b3ca7e82760"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "bb1c794c1dd26e70558dd86396503337fa0d04765559b42cde7c6c7592e26500"
+hash = "4f6adc14f8d4336ac87b24e130153ff6aab13151cb163c28c30c2a3962834ba3"
 
 [[files]]
 file = "config/farmersdelight-client.toml"
@@ -467,7 +467,7 @@ hash = "91830a62c24898b197ea5a244924e8b9388bd72c50e4ba4e91efa21264168716"
 
 [[files]]
 file = "config/fml.toml"
-hash = "506f0c4c714bf1528d45ab8202f303bde6ba5f9e53778c92a679efbc185afb12"
+hash = "eb6e8b8eda9682889a83d55262ef96cf37153d58fe7f0fa5d5cb1da5d9f7dd9b"
 
 [[files]]
 file = "config/forge-client.toml"
@@ -719,7 +719,7 @@ hash = "1988b86b1249cd3e48054df8c94f0225022dbc17689cc0fec2f0e0bde40709c8"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "22df56f45c7778da358891e88e300d4f5403c97b35f0a7361d5b2d72d9810f9f"
+hash = "b054f9b25b615ec09be30626d25c98c779a06424988f25220b1a5bbec5fbcfd8"
 preserve = true
 
 [[files]]
@@ -902,6 +902,10 @@ hash = "453bfc015ba48db18892d515e17efeb4cd45499e2ea2394b69a7281480b8fc31"
 [[files]]
 file = "config/tconstruct-common.toml"
 hash = "f7f3cb71057b2c289e9268638aec7a12068defb9c418f55b77ae42f90931a34c"
+
+[[files]]
+file = "config/tentaworks-client.toml"
+hash = "5d515ecc832914c9119f4c87ae75d5e6f9af1ca90d097e580167ecf512bd3ba8"
 
 [[files]]
 file = "config/ticex-client.toml"
@@ -1101,31 +1105,63 @@ hash = "ec327caedcb5e061f406f449e4d6062c83dbc28f0b938a44f5e18e5b4397628c"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/cindervane.json"
-hash = "97965ae34940cc4e29665d72cc7ad60344ce3b135173fd4ceab767140f8c965b"
+hash = "bf0f54f1c320899f74567c6f36b20e4e5da7d39abbdd49f93d00b6969c7909cf"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/ignivorus.json"
-hash = "bfdf4053957cc8a5804bbef8a10a909149c1be6715f347816211bdb6b59a9f50"
+hash = "7aab28f01a91993fcc610724e9845747dc2a0d46f85a2088c5a3057ae844ca99"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/nulljaw.json"
-hash = "9cd47eb6a1908ec9266b62d44b5d0b5c7b9268a01076512d459c5e7caa31c24d"
+hash = "717b45a15e5f9fb9fb7e3d687efe61a9a26f318ffa5a8247f3af3a33b43c2ba4"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/raevyx.json"
-hash = "9e2c61516ac434fbc952cb1fd4540810407b68abd2f142aa399999572e20ab4d"
+hash = "9e79c42a5199062ef5be4eb539e29007cc577ca8c2d184ad5a78d3860e49a95e"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/stegonaut.json"
-hash = "63fdc752fcf14ff853d6690cf0a71ca83f8689d59299a69985e4669d4f841d7c"
+hash = "037d3c093d3b01b35cb0e44883f19219c429f6b45714da07828e2bbe859b3ff8"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/varasuchus.json"
-hash = "c5d96039f2e45f153e191f96dbb8f059f0d09c8f606ae5fbd37e88e1c63871cd"
+hash = "6c05a948ad2dfd63badf06f3f00d2808b0f357ee5099c9ab5ce2656483382fe8"
 
 [[files]]
 file = "kubejs/data/apotheosis/bosses/magic_overtech/volitans.json"
-hash = "24224cac68bb0b51a9008a8978be6dcee1d05221248c7f72a0b54a8b53df299d"
+hash = "380a634241a2fed098ba0f659d515cdd37d3b67fa5ede55ac914777053b94ae1"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/ancient_crushing.json"
+hash = "9efb02382b3e1eb22fb8b36bc8f00a5f7a94faf6bdc3eed9817f4c90f88bc63c"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/artifact_crushing.json"
+hash = "b4136cec8bf6733a074fc6c3444ca76629956d57f62e87b18c0e378cbbd1aad1"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/epic_crushing.json"
+hash = "861d6ae090c124826f3ea4f423659ee0e38051ae43a4168bf526b93b10744563"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/esoteric_crushing.json"
+hash = "899b37e73bad85fcbdf3922e24d205ceb67a2f8fb91789bb00982bfa42909322"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/heirloom_crushing.json"
+hash = "6b2e6a09fffded1d4a8e4240eb1b84772eb8b3b70c064e710545ec5571e0f55c"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/mythic_crushing.json"
+hash = "96312a40548c294b6a8d8aaf1932df894eed3d9479f0f6eb88ff72552d0c6331"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/rare_crushing.json"
+hash = "d29741c647ad7986ecbf9b3de22f94b6c9f3c6f24cb69b5915c9a4d2d49062fb"
+
+[[files]]
+file = "kubejs/data/apotheotic_additions/recipes/material/uncommon_crushing.json"
+hash = "fff7dbdbc4a696adab7ef7de738719b592504c977f6c8af1906b0b129d5705cb"
 
 [[files]]
 file = "kubejs/data/bookofdragons/tags/worldgen/biome/has_roost_barrens.json"
@@ -1226,6 +1262,14 @@ hash = "21240b9a6f5db612a2d825f002e7e1737ce9e81b5e1811c633f1348e8b7ff4ad"
 [[files]]
 file = "kubejs/data/magic_overtech/functions/stellarity_gate.mcfunction"
 hash = "5bae53b137ab7e834adc26160018bed7c39547379f1feb05991eea79bf30e6dd"
+
+[[files]]
+file = "kubejs/data/magic_overtech/recipes/reforging/esoteric.json"
+hash = "edaa6a291a4459c596885ebc0b242e20a8734995c35d53c9cdbe94ba13650475"
+
+[[files]]
+file = "kubejs/data/magic_overtech/recipes/reforging/heirloom.json"
+hash = "711531905576eb410d5077774a9f75127db894d1eb3ab8290283e0a23fb56f92"
 
 [[files]]
 file = "kubejs/data/magic_overtech/tags/items/dragon_exchange_eggs.json"
@@ -1392,12 +1436,16 @@ file = "kubejs/server_scripts/companion_variant_memory.js"
 hash = "76a3f71110bda0b10aee6363f5870025df2f24eb83d0a74cf2aa320cefc11e96"
 
 [[files]]
+file = "kubejs/server_scripts/death_compass.js"
+hash = "b2ca69e0f7053e18f502feb4c1e86adb8bc08ea977cd21a2874b4f08268b9c1a"
+
+[[files]]
 file = "kubejs/server_scripts/death_coordinates.js"
 hash = "80e6d8c40f19f17bb87aae8f81e48de315f5cca0afda5ef9385cd56d196c4706"
 
 [[files]]
 file = "kubejs/server_scripts/dragon_spawn_rate.js"
-hash = "8c7588d3c5fd8fff897060ee79884ff127444e07f128d5eed3b88f4f6c8f5c24"
+hash = "25c93adbf5886a93bc380af0ffbb0abc7ef36c41634a905b754c4e908ed0012c"
 
 [[files]]
 file = "kubejs/server_scripts/dragon_taming_gate.js"
@@ -1571,6 +1619,11 @@ hash = "198916c85c47a86dea7184344d2425a18b6a414247b79730d51cca6bfa97f6bb"
 metafile = true
 
 [[files]]
+file = "mods/clockwork-0-5-6.pw.toml"
+hash = "8c8f2bb60a3f44f82de9d584df8caa721a29d6daeda6281d130911225ef36a91"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config-11-1-136-forge.pw.toml"
 hash = "2608d056d48912a935ce96c5826b2e490412976075215c4eb608385913cbeed0"
 metafile = true
@@ -1718,6 +1771,11 @@ metafile = true
 [[files]]
 file = "mods/essential-1-4-0-3-forge-1-20-1.pw.toml"
 hash = "d58f69934569a1a41271af4daa1488c825e2d4a34eeed867e1429aea6b200bbb"
+metafile = true
+
+[[files]]
+file = "mods/eureka-1201-1-6-3.pw.toml"
+hash = "6e88b65819a41c166c299fe2089bc5529e5d7d0032aac7aa81e2e17ce467cc33"
 metafile = true
 
 [[files]]
@@ -2056,9 +2114,18 @@ hash = "c969f8e96d60551d3ec3b7eeb8affef0672c429012d66328b0a60a311fd40d11"
 metafile = true
 
 [[files]]
+file = "mods/octo-arms-1-7-1-mc1-20-1.pw.toml"
+hash = "7a53add184474ac790c045a306c7d572bbea0a9382c4057f0b5f2722017a66ba"
+metafile = true
+
+[[files]]
 file = "mods/oculus-mc1-20-1-1-8-0.pw.toml"
 hash = "f2e10e91b32435f2d35869048741158a78a4108d764255448fa3c993b244da4b"
 metafile = true
+
+[[files]]
+file = "mods/overtech_tweaks-1.0.0.jar"
+hash = "6d44c6f4198e6ac72215437026527271270bdbbdec129a10d120558ce7945ef7"
 
 [[files]]
 file = "mods/particlerain-4-0-2-1-20-1-forge.pw.toml"
@@ -2223,6 +2290,11 @@ metafile = true
 [[files]]
 file = "mods/unusualend-2-3-1d.pw.toml"
 hash = "ffbba65b3af9dfd84d2c9f893829bb28ae231ce80c7d3e5157b5d6ef838b62ab"
+metafile = true
+
+[[files]]
+file = "mods/valkyrienskies-120-2-4-11.pw.toml"
+hash = "fb4fa419ea0a8e90c5fc2d038a9d8633930ac94eaf82080981acd620a510bba0"
 metafile = true
 
 [[files]]

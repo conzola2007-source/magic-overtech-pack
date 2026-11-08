@@ -1,12 +1,12 @@
 name = "Magic Overtech"
 author = "TheBasicOx"
-version = "2026.11.08-0522"
+version = "2026.11.08-0651"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "20a41eb2d31b944ec1926651de699c63b1c9cd69120aef8d73a8a91116006326"
+hash = "fdba670a2f5d124cedf362b39f7ec856192224ec4cfb5bcc0ed93905a6e8f461"
 
 [versions]
 minecraft = "1.20.1"

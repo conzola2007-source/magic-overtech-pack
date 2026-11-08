@@ -1,13 +1,13 @@
-// Saint's Dragons spawn at 30% of their configured rate (Moe, 2026-11-02).
+// Saint's Dragons spawn at 15% of their configured rate (Moe, 2026-11-02; halved from 30% on 2026-11-08).
 // The weights in config/saintsdragons/server/spawning.toml are integers, mostly
-// 1-5, so they can't be scaled to 30% cleanly. Instead every natural or
-// chunk-generation spawn of a saintsdragons: entity is kept with a 30% chance.
+// 1-5, so they can't be scaled cleanly. Instead every natural or
+// chunk-generation spawn of a saintsdragons: entity is kept with a 15% chance.
 // Eggs, spawn eggs, commands and Apotheosis boss spawns are left alone.
 // To change the rate, change DRAGON_SPAWN_KEEP.
 //
 // Cost: runs once per spawn attempt (not per tick, not per player), and bails
 // on the first string check for anything that isn't a dragon.
-const DRAGON_SPAWN_KEEP = 0.3
+const DRAGON_SPAWN_KEEP = 0.15
 const DRAGON_SPAWN_ENTITY_TYPE = Java.loadClass('net.minecraft.world.entity.EntityType')
 
 EntityEvents.checkSpawn(event => {

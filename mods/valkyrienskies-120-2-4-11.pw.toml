@@ -1,0 +1,8 @@
+name = "valkyrienskies-120-2.4.11.jar"
+filename = "valkyrienskies-120-2.4.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/V5ujR2yw/versions/pOkdwuUh/valkyrienskies-120-2.4.11.jar"
+hash-format = "sha1"
+hash = "bd3478fcd43d4168950dfa7e77188d7bb12fd43e"
