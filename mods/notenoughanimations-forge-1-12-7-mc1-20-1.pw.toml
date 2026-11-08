@@ -1,0 +1,12 @@
+name = "Not Enough Animations"
+filename = "notenoughanimations-forge-1.12.7-mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9396/176/notenoughanimations-forge-1.12.7-mc1.20.1.jar"
+hash-format = "sha1"
+hash = "94b051bda7fd0e7f8e8b119db779d3a9c8730f80"
+
+[update.curseforge]
+file-id = 9396176
+project-id = 433760

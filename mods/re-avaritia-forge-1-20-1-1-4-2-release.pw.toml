@@ -1,0 +1,12 @@
+name = "Re:Avaritia[Forge/Fabric/Neoforge]"
+filename = "Re-Avaritia-forge-1.20.1-1.4.2-release.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8838/608/Re-Avaritia-forge-1.20.1-1.4.2-release.jar"
+hash-format = "sha1"
+hash = "d127e9ac5a00768b567aa1790710c39e16748fcd"
+
+[update.curseforge]
+file-id = 8838608
+project-id = 623969

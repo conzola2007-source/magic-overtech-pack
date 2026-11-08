@@ -1,0 +1,12 @@
+name = "Particle Rain"
+filename = "particlerain-4.0.2+1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9113/940/particlerain-4.0.2%2B1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "a548b34411e2dd80936baa18f8dc71084430e29a"
+
+[update.curseforge]
+file-id = 9113940
+project-id = 421897

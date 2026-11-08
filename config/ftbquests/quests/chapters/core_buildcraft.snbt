@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "core_buildcraft"
+	group: ""
+	icon: "irons_spellbooks:arcane_anvil"
+	id: "2B00000000000000"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1A00500000000005"]
+			description: [
+				"Build the full Smeltery."
+				"Novice only asked you to use the melter. This stage is where Tinkers becomes real infrastructure: controller, fuel, drains, casting, and enough molten metal handling to push into serious materials."
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "2B00500000000001"
+			tasks: [{
+				id: "2B00600000000001"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			title: "Full Smeltery"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B00500000000001"]
+			description: [
+				"Make the Tinkers' Anvil."
+				"This is the real tool-building station after the full Smeltery. It opens the heavier tools and makes this branch feel like more than just more molten metal."
+			]
+			icon: "tconstruct:tinkers_anvil"
+			id: "2B00500000000002"
+			tasks: [{
+				id: "2B00600000000002"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			title: "Tinkers' Anvil"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B00500000000002"]
+			description: [
+				"Make a Part Chest."
+				"This keeps patterns and parts close to the tool stations so Tinkers does not turn into inventory clutter."
+			]
+			icon: "tconstruct:part_chest"
+			id: "2B00500000000006"
+			tasks: [{
+				id: "2B00600000000008"
+				item: "tconstruct:part_chest"
+				type: "item"
+			}]
+			title: "Part Chest"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B00500000000002"]
+			description: [
+				"Make a Cast Chest."
+				"This is the drawer for ingot casts, part casts, and all the repeated casting pieces you keep reusing."
+			]
+			icon: "tconstruct:cast_chest"
+			id: "2B00500000000007"
+			tasks: [{
+				id: "2B00600000000009"
+				item: "tconstruct:cast_chest"
+				type: "item"
+			}]
+			title: "Cast Chest"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B00500000000006"
+				"2B00500000000007"
+			]
+			description: [
+				"Get Blazing Blood."
+				"This is the hotter fuel path that lets the Smeltery work with harder materials. It also pushes you toward the Nether side of Tinkers instead of staying in the beginner metal loop."
+			]
+			icon: "tconstruct:blazing_blood_bucket"
+			id: "2B00500000000003"
+			tasks: [{
+				id: "2B00600000000006"
+				item: "tconstruct:blazing_blood_bucket"
+				type: "item"
+			}]
+			title: "Blazing Blood"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2B00500000000003"]
+			description: [
+				"Make Manyullyn."
+				"This is the Tinkers proof for the age: you reached the hotter fuel path, handled cobalt and debris-tier materials, and can start building tools around real midgame metal."
+			]
+			icon: "tconstruct:manyullyn_ingot"
+			id: "2B00500000000004"
+			tasks: [{
+				id: "2B00600000000007"
+				item: "tconstruct:manyullyn_ingot"
+				type: "item"
+			}]
+			title: "Manyullyn"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A00500000000005"]
+			description: [
+				"Make the full Reforging Table."
+				"The simple table was the intro. This is the upgraded station for pushing gear toward better affixes instead of just accepting whatever drops."
+			]
+			icon: "apotheosis:reforging_table"
+			id: "2B10500000000001"
+			tasks: [{
+				id: "2B10600000000001"
+				item: "apotheosis:reforging_table"
+				type: "item"
+			}]
+			title: "Upgraded Reforging"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B10500000000001"]
+			description: [
+				"Use the salvage economy enough to get Epic Affix Material."
+				"Purple scrap is the point where bad loot starts turning into serious reroll fuel."
+			]
+			icon: "apotheosis:epic_material"
+			id: "2B10500000000002"
+			tasks: [{
+				id: "2B10600000000002"
+				item: "apotheosis:epic_material"
+				type: "item"
+			}]
+			title: "Epic Material"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B10500000000002"]
+			description: [
+				"Obtain a Flawless gem."
+				"In this version of Apotheosis, Flawless gems are the Mythic gem tier. You do not need to socket it yet, just prove you can reach that tier."
+			]
+			icon: "apotheosis:gem"
+			id: "2B10500000000003"
+			tasks: [{
+				advancement: "apotheosis:affix/mythic_gem"
+				criterion: ""
+				id: "2B10600000000003"
+				title: "Obtain any Flawless gem"
+				type: "advancement"
+			}]
+			title: "Flawless Gem"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B10500000000002"]
+			description: [
+				"Obtain any Epic affix item."
+				"Any tool, weapon, armor piece, or valid affix gear works here. The point is that you have touched purple-tier Apotheosis loot."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2B10500000000004"
+			tasks: [{
+				advancement: "apotheosis:affix/epic"
+				criterion: ""
+				id: "2B10600000000004"
+				title: "Obtain any Epic affix item"
+				type: "advancement"
+			}]
+			title: "Purple Affix Gear"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A00500000000005"]
+			description: [
+				"Obtain Epic Ink."
+				"You are not in Legendary control yet. This proves you can reach the Epic ink tier and start choosing stronger spell upgrades."
+			]
+			icon: "irons_spellbooks:epic_ink"
+			id: "2B20500000000003"
+			tasks: [{
+				id: "7BDC353078D5881C"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			title: "Epic Ink"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B20500000000003"]
+			description: [
+				"Make the Alchemist Cauldron."
+				"This is the support block for brewing the ink tiers that let you push spell rarity forward."
+			]
+			icon: "irons_spellbooks:alchemist_cauldron"
+			id: "2B20500000000002"
+			tasks: [{
+				id: "2B20600000000002"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			title: "Alchemist Cauldron"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B20500000000002"]
+			description: [
+				"Make the Arcane Anvil."
+				"This is where Iron's Spells starts becoming a controlled system instead of just found scrolls and a beginner book."
+			]
+			icon: "irons_spellbooks:arcane_anvil"
+			id: "2B20500000000001"
+			tasks: [{
+				id: "2B20600000000001"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			title: "Arcane Anvil"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B20500000000002"]
+			description: [
+				"Make the Scroll Forge."
+				"This gives you the station for creating actual scrolls instead of relying only on found scrolls."
+			]
+			icon: "irons_spellbooks:scroll_forge"
+			id: "2B20500000000004"
+			tasks: [{
+				id: "2B20600000000007"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			title: "Scroll Forge"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2B00500000000004"
+				"2B10500000000003"
+				"2B10500000000004"
+				"2B20500000000001"
+				"2B20500000000004"
+			]
+			description: [
+				"Apprentice Artificer complete."
+				"You have finished the second half of the early core loop. The End route is now allowed: Eyes of Ender and special End eyes should become usable for finding the stronghold and opening the portal."
+			]
+			icon: "apotheosis:mythic_material"
+			id: "2B00500000000005"
+			rewards: [
+				{
+					autoclaim: "enabled"
+					command: "/decstages add {p} end_access"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "2B00700000000005"
+					title: "Unlock End Access"
+					type: "command"
+				}
+				{
+					autoclaim: "enabled"
+					command: "/decstages add {p} core_buildcraft"
+					elevate_perms: true
+					exclude_from_claim_all: true
+					id: "2B00700000000006"
+					title: "Apprentice Artificer Stage"
+					type: "command"
+				}
+				{
+					id: "2B00700000000007"
+					item: "naturescompass:naturescompass"
+					title: "Nature's Compass"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2B00600000000005"
+				title: "Become a Paragon Of Power"
+				type: "checkmark"
+			}]
+			title: "Become a Paragon Of Power"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "Apprentice Artificer"
+}

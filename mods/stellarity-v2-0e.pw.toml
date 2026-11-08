@@ -1,0 +1,12 @@
+name = "Stellarity"
+filename = "Stellarity-v2-0e.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/4714/310/Stellarity-v2-0e.jar"
+hash-format = "sha1"
+hash = "d54f54446b7afaed0c7bdf9679bc376f4913d16c"
+
+[update.curseforge]
+file-id = 4714310
+project-id = 883166

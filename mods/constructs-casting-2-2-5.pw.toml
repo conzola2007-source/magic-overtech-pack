@@ -1,0 +1,12 @@
+name = "Construct's Casting"
+filename = "constructs_casting-2.2.5.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8239/694/constructs_casting-2.2.5.jar"
+hash-format = "sha1"
+hash = "da5153cf4dc1e202968456e0e263e98484015572"
+
+[update.curseforge]
+file-id = 8239694
+project-id = 1000007

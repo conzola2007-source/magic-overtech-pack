@@ -1,0 +1,36 @@
+{
+  "Restriction Data": {
+    "stage": "infinity_age",
+    "itemList": [
+      {
+        "item": "ticex:molten_infinity_bucket"
+      },
+      {
+        "item": "explorerscompass:explorerscompass"
+      }
+    ],
+    "modList": [
+      "avaritia"
+    ],
+    "tagList": [],
+    "fluidList": [],
+    "exceptionList": [],
+    "structureList": [],
+    "mobList": [],
+    "containerList": [],
+    "dimensionList": []
+  },
+  "Settings": {
+    "advancedTooltips": "ALWAYS",
+    "dropItemsFromInventory": true,
+    "dropArmorFromInventory": true,
+    "canPickupItems": false,
+    "itemsPickupDelay": 15,
+    "hideInJEI_REI": true,
+    "canUseItems": false,
+    "containerListWhitelist": false,
+    "canBreakBlocks": false,
+    "canRightClickBlocks": false,
+    "applyToFakePlayers": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Restriction Data": {
+    "stage": "chaotic_age",
+    "itemList": [],
+    "modList": [],
+    "tagList": [],
+    "fluidList": [],
+    "exceptionList": [],
+    "structureList": [],
+    "mobList": [],
+    "containerList": [],
+    "dimensionList": []
+  },
+  "Settings": {
+    "advancedTooltips": "ALWAYS",
+    "dropItemsFromInventory": true,
+    "dropArmorFromInventory": true,
+    "canPickupItems": false,
+    "itemsPickupDelay": 15,
+    "hideInJEI_REI": true,
+    "canUseItems": false,
+    "containerListWhitelist": false,
+    "canBreakBlocks": false,
+    "canRightClickBlocks": false,
+    "applyToFakePlayers": false
+  }
+}

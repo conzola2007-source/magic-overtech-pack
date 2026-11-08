@@ -1,0 +1,12 @@
+name = "Amendments"
+filename = "amendments-1.20-2.2.6.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8657/397/amendments-1.20-2.2.6.jar"
+hash-format = "sha1"
+hash = "dc79f8c5326b059c8f136765b4bca826147cf2d7"
+
+[update.curseforge]
+file-id = 8657397
+project-id = 896746

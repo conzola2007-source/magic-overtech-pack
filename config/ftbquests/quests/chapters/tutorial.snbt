@@ -1,0 +1,406 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "tutorial"
+	group: ""
+	icon: "minecraft:writable_book"
+	id: "0A00000000000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to Magic Overtech."
+				"I made this modpack because I hate how cluttered and congested most mainstream modpacks feel. I hate being able to cheese my way into overpowered gear, and I hate when progression does not feel deserved."
+				"Magic Overtech is meant to avoid that. By the end, every important piece of loot you have should feel earned."
+			]
+			icon: "minecraft:writable_book"
+			id: "0A00500000000001"
+			tasks: [{
+				id: "0A00600000000001"
+				title: "I will become legendary"
+				type: "checkmark"
+			}]
+			title: "Magic Overtech"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0A00500000000001"]
+			description: [
+				"The quests are here to guide you, introduce the major systems, and lock certain progression barriers."
+				"They are not meant to solve the whole pack for you. You are expected to experiment, use JEI, read mod books, and figure out your own build."
+			]
+			icon: "minecraft:book"
+			id: "0A00500000000002"
+			tasks: [{
+				id: "0A00600000000002"
+				title: "I understand how quests are used"
+				type: "checkmark"
+			}]
+			subtitle: "\"Do I Think?\" - Gio Sidamonidze"
+			title: "How to Use Quests"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0A00500000000002"]
+			description: [
+				"By the end, every piece of armor and every tool should feel handmade for your own play style."
+				"You will build around selected materials, special upgrades, hand-cut gems, affixes, enchantments, spells, and utility that does more than generic damage numbers."
+				"Your build should be unique to you. There is no single best way to play."
+			]
+			icon: "minecraft:nether_star"
+			id: "0A00500000000003"
+			tasks: [{
+				id: "0A00600000000003"
+				title: "I understand the progression promise"
+				type: "checkmark"
+			}]
+			title: "What You Are Building Toward"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0A00500000000003"]
+			description: [
+				"This modpack was made with Keep Inventory in mind. Turn it on yourself or ask your host to turn it on at some point."
+				"It is meant to feel closer to a Souls-like progression loop. Losing all of your items would not make that harder in an interesting way; it would just make the pack worse to play."
+				"I personally recommend giving each major mod or system its own build when you can. It keeps the world cleaner, makes the base feel intentional, and stops every system from becoming one giant cluttered pile."
+			]
+			icon: "minecraft:recovery_compass"
+			id: "0A00500000000004"
+			tasks: [{
+				id: "0A00600000000004"
+				title: "I understand the gameplay notes"
+				type: "checkmark"
+			}]
+			title: "Gameplay Notes"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0A00500000000004"]
+			description: [
+				"Iron's Spells turns you into a real mage."
+				"It is the utility magic layer of the modpack. It is easy enough to reach the point where vanilla mobs are not scary, so this gives your build a more unique edge."
+				"Short-range teleportation, pulling mobs into one point, summoning creatures to fight for you, and other spell effects are what Iron's Spells is here for."
+			]
+			icon: "irons_spellbooks:copper_spell_book"
+			id: "0A10500000000002"
+			subtitle: "\"So Was I but I Still Wreak Havoc\" - Yousef Abusido"
+			tasks: [{
+				id: "0A10600000000002"
+				title: "I understand Iron's Spells"
+				type: "checkmark"
+			}]
+			title: "Iron's Spells and Spellbooks"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0A00500000000004"]
+			description: [
+				"Tinkers' Construct is how you will make most of your tools, weapons, and armor."
+				"I highly recommend making a full set as soon as you can. One of the biggest benefits of Tinkers is that broken gear can simply be repaired."
+				"Nothing disappears or breaks permanently, so anything you make can stay with you all the way into endgame."
+			]
+			icon: "tconstruct:tinkers_anvil"
+			id: "0A10500000000001"
+			tasks: [{
+				id: "0A10600000000001"
+				title: "I understand Tinkers' Construct"
+				type: "checkmark"
+			}]
+			title: "Tinkers' Construct"
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0A00500000000004"]
+			description: [
+				"Apotheosis has two main parts: its enchantment overhaul, and its affix and gem system."
+				"Enchanting can be powerful, but Tinkers gear cannot use normal enchantments, so you are not expected to go deep into that route unless you want to."
+				"The main value here is build crafting. Tools, weapons, and armor can roll affixes, gain sockets, and hold gems with specialized effects that help shape your build."
+			]
+			icon: "apotheosis:reforging_table"
+			id: "0A10500000000003"
+			subtitle: "\"Efficiency? Yea?? Where Else Would They Live?\" - Yousef Abusido"
+			tasks: [{
+				id: "0A10600000000003"
+				title: "I understand Apotheosis"
+				type: "checkmark"
+			}]
+			title: "Apotheosis"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"0A10500000000002"
+				"0A10500000000001"
+				"0A10500000000003"
+			]
+			description: [
+				"These are your bread and butter."
+				"This is going to be most of what you do starting off in the modpack, and most of your progression will relate back to these three systems."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A20500000000001"
+			tasks: [{
+				id: "0A20600000000001"
+				title: "I understand the core trio"
+				type: "checkmark"
+			}]
+			title: "Bread and Butter"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"Farmer's Delight makes food more interesting."
+				"Besides being very visually appealing, it raises the ceiling for how useful food can be. Better meals can give more hunger, more saturation, and special effects."
+				"That matters more as your health grows past the vanilla 10 hearts. When you are sitting around 20 or 30 hearts, stronger food becomes part of staying alive."
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "0A10500000000006"
+			subtitle: "\"Tastes like beef tortellini with sautéed onions in the background\" - Yousef Abusido"
+			tasks: [{
+				id: "0A10600000000006"
+				title: "I understand food progression"
+				type: "checkmark"
+			}]
+			title: "Farmer's Delight"
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"Domestication Innovation makes pets more useful by fixing the biggest problem pets have: they die."
+				"The biggest mechanic is that pets can respawn using pet beds, but it also lets you enchant pets and give them abilities with enchanted collars."
+				"These abilities get very unique, so look into this if you are tired of pets being decoration and want companions that can actually go on quests with you."
+			]
+			icon: "domesticationinnovation:collar_tag"
+			id: "0A1050000000000A"
+			subtitle: "\"If I Joined The Army And They Told Me 'My Cat Was Home When I Left.' I'd Leave\" - Yousef Abusido"
+			tasks: [{
+				id: "0A1060000000000A"
+				title: "I understand pet progression"
+				type: "checkmark"
+			}]
+			title: "Domestication Innovation"
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"Your storage setup comes from Sophisticated Storage, Sophisticated Backpacks, and Tom's Simple Storage working together."
+				"This gives you a large storage system where you can view your resources from one central hub."
+				"You also get large backpacks, which gives you much-needed inventory space when you go adventuring for ores, gems, boss loot, and everything else."
+			]
+			icon: "sophisticatedstorage:controller"
+			id: "0A1050000000000B"
+			tasks: [{
+				id: "0A1060000000000B"
+				title: "I understand storage progression"
+				type: "checkmark"
+			}]
+			title: "Sophisticated Storage"
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"Cognition exists to solve a major problem in this pack: XP and mob farming matter a lot."
+				"It makes it much easier to farm mobs, gather their loot, and keep their XP even when you are not standing there collecting it yourself."
+			]
+			icon: "experienceobelisk:experience_obelisk"
+			id: "0A10500000000005"
+			subtitle: "\"Bro there are leeeevelllsss to thisssss\" - Zaid Abusido"
+			tasks: [{
+				id: "0A10600000000005"
+				title: "I understand Cognition"
+				type: "checkmark"
+			}]
+			title: "Cognition"
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"Create is one of the largest and most content-rich mods in the pack. It could easily justify an entire modpack by itself."
+				"In this pack, it is your main way to automate things and add motion to builds: working windmills, actual elevators, trains between bases, and other infrastructure."
+				"It is incredibly sophisticated, and I highly recommend looking into it."
+			]
+			icon: "create:andesite_casing"
+			id: "0A10500000000004"
+			tasks: [{
+				id: "0A10600000000004"
+				title: "I understand Create"
+				type: "checkmark"
+			}]
+			title: "Create"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0A20500000000001"]
+			description: [
+				"MineColonies is the civilization system."
+				"Build a colony, place work huts, manage citizens, and let the world grow into a settlement alongside your personal progression."
+				"If you do not have a personal appetite for builds, or if you just want to be a dictator, this is the mod for you."
+				"Be careful putting it inside or right next to your main base or your friends' bases. It will completely change the environment in a way that only really makes sense for the colony's own ecosystem."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "0A1050000000000C"
+			subtitle: "\"I've Never Been A Civilian\" - EmmaRose"
+			tasks: [{
+				id: "0A1060000000000C"
+				title: "I understand colony progression"
+				type: "checkmark"
+			}]
+			title: "MineColonies"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"0A1050000000000A"
+				"0A10500000000006"
+				"0A1050000000000B"
+				"0A10500000000005"
+				"0A10500000000004"
+				"0A1050000000000C"
+			]
+			description: [
+				"Getting to the End is significantly harder in this modpack."
+				"There are very good tools hidden behind the End, so reaching it is meant to be a real challenge."
+				"End Remastered changes the portal route by adding multiple types of Ender Eyes, and each portal slot can only use one of each type."
+				"This forces you to explore more of the world. Each eye is usually hidden behind a vanilla Minecraft structure, so it is mostly a matter of being thorough while you loot."
+			]
+			icon: "minecraft:ender_eye"
+			id: "0A10500000000007"
+			tasks: [{
+				id: "0A10600000000007"
+				title: "I understand the End route changed"
+				type: "checkmark"
+			}]
+			title: "End Remastered"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0A10500000000007"]
+			description: [
+				"Draconic Evolution is the strongest normal power layer before the pack is beaten."
+				"It is a true endgame challenge, and it is where the modpack really gets grindy."
+				"The rewards are unmatched."
+			]
+			icon: "draconicevolution:wyvern_core"
+			id: "0A10500000000008"
+			tasks: [{
+				id: "0A10600000000008"
+				title: "I understand Draconic Evolution"
+				type: "checkmark"
+			}]
+			title: "Draconic Evolution"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A10500000000008"]
+			description: [
+				"Infinity is the end state and the reward for winning."
+				"You get to Infinity after you beat everything."
+				"Although it is the strongest armor and toolset in the entire game, it is meant as a reward for winning. It puts you in an unkillable, practically creative state so you can keep developing your world artistically without needing to face more challenge."
+			]
+			icon: "avaritia:infinity_catalyst"
+			id: "0A10500000000009"
+			subtitle: "\"So Why Don't You Just Do That?\" - Zaid Abusido"
+			tasks: [{
+				id: "0A10600000000009"
+				title: "I understand Infinity progression"
+				type: "checkmark"
+			}]
+			title: "Infinity"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0A10500000000009"]
+			description: [
+				"Most of your power scaling will come through Iron's Spells and Spellbooks, Tinkers' Construct, and Apotheosis."
+				"Farmer's Delight gives you better food. Sophisticated Storage helps manage all the loot you gather. Domestication Innovation lets a loyal companion join you on the journey."
+				"Cognition helps satisfy the pack's XP demands. Create automates and visually enhances your builds. MineColonies is for players who want to rule a kingdom on top of everything else, or who want to feel like part of a larger civilization."
+			]
+			icon: "minecraft:written_book"
+			id: "0A30500000000001"
+			tasks: [{
+				id: "0A30600000000001"
+				title: "I understand the full progression shape"
+				type: "checkmark"
+			}]
+			title: "Progression Summary"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"If you do not want to read this whole tutorial, click this."
+				"This is here for players who already understand the pack direction and just want to begin progression."
+			]
+			icon: "minecraft:barrier"
+			id: "0A40500000000001"
+			tasks: [{
+				id: "0A40600000000001"
+				title: "Skip the tutorial explanation"
+				type: "checkmark"
+			}]
+			title: "Escape This"
+			x: 9.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"0A30500000000001"
+				"0A40500000000001"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Tutorial complete."
+				"Begin the Path of the Artificer when you are ready to turn the overview into actual progression."
+			]
+			icon: "minecraft:iron_pickaxe"
+			id: "0A00500000000005"
+			rewards: [{
+				autoclaim: "enabled"
+				command: "/decstages add {p} grounded_age"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "0A00700000000005"
+				title: "Begin the Path of the Artificer"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0A00600000000005"
+				title: "Begin the Path of the Artificer"
+				type: "checkmark"
+			}]
+			title: "Begin the Path of the Artificer"
+			x: 9.0d
+			y: 2.0d
+		}
+	]
+	title: "Tutorial"
+}

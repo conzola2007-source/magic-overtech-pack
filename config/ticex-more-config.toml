@@ -1,0 +1,44 @@
+
+["RF Furnace Fuel Temperature Settings"]
+	#The format for these is "key|value".
+	#- key:RF Furnace Fuel index(1-19)
+	#- value:32-bit signed integer (Maximum value is about 2.147G)
+	#ex. "1|200"(Temperature of RF Furnace Fuel 1 will be set to 200)
+	"RF Furnace Temps" = ["19|2147483647"]
+
+["RF Furnace Fuel Speed Rate Settings"]
+	#The format for these is "key|value".
+	#- key:RF Furnace Fuel index(1-19)
+	#- value:32-bit signed integer (Maximum value is about 2.147G)
+	#The actual speed multiplier is calculated by dividing this value by 10.
+	#It means setting it to 100 results in 10x speed, and 25 results in 2.5x speed.
+	#ex. "1|250"(Speed rate of RF Furnace Fuel 1 will be set to 25x)
+	"Speed Rate of RF Furnace Fuel" = ["19|655350"]
+
+["Catalyst Settings"]
+	#If set to true, the catalyst will consume the Slashblade upon use.
+	shouldConsumeSlashblade = true
+
+[general]
+	#Using More-Config(If true, it may override your datapack!)
+	useMoreConfig = true
+
+["Tool/Armor Slots Override Settings"]
+	#The format for these is "key1|key2|value".
+	#- key1:ResourceLocation of tool
+	#- key2:"upgrades"/"abilities"/"defence"
+	#- value: 32-bit signed integer. (Maximum value is about 2.147G)
+	#ex. "tconstruct:cleaver|abilities|3"(ability slot size of tconstruct:cleaver will be set to 3)
+	"Slots Override Settings" = ["tconstruct:sword|upgrades|5"]
+
+["Modifier Maximum Level Settings"]
+	#The format for these is "key|value".
+	#- key1:ResourceLocation of modifier
+	#- value: 32-bit signed integer. (Maximum value is about 2.147G)
+	#ex. "tconstruct:tools/modifiers/upgrade/necrotic|10"(maximum level of tconstruct:tools/modifiers/upgrade/necrotic will be set to 10)
+	"Maximum Level of Modifiers" = ["tconstruct:tools/modifiers/upgrade/reinforced|7", "tinkerslevellingaddon:improvable|15"]
+
+[Misc]
+	#If set to true, it will increase the maximum level of the DragonForce trait to 4, allowing you to inflict chaotic damage before defeating the Chaos Guardian.
+	easierDragonForce = false
+

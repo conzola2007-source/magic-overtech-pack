@@ -1,0 +1,12 @@
+name = "ImmediatelyFast"
+filename = "ImmediatelyFast-Forge-1.5.5+1.20.4.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8348/481/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar"
+hash-format = "sha1"
+hash = "9eacd407b7dea636d375dc47335d92f616484ea2"
+
+[update.curseforge]
+file-id = 8348481
+project-id = 686911

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "killed_dead_king": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "irons_spellbooks:dead_king"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_dead_king"
+    ]
+  ]
+}

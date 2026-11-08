@@ -1,0 +1,58 @@
+{
+  "Restriction Data": {
+    "stage": "draconic_age",
+    "itemList": [
+      {
+        "item": "ticex:draconium_evolved_core"
+      },
+      {
+        "item": "ticex:wyvern_evolved_core"
+      },
+      {
+        "item": "ticex:draconic_evolved_core"
+      },
+      {
+        "item": "ticex:chaotic_evolved_core"
+      },
+      {
+        "item": "ticex:draconium_crystal"
+      },
+      {
+        "item": "ticex:wyvern_crystal"
+      },
+      {
+        "item": "ticex:draconic_crystal"
+      },
+      {
+        "item": "ticex:chaotic_crystal"
+      }
+    ],
+    "modList": [
+      "draconicevolution"
+    ],
+    "tagList": [],
+    "fluidList": [],
+    "exceptionList": [
+      {
+        "item": "draconicevolution:dragon_heart"
+      }
+    ],
+    "structureList": [],
+    "mobList": [],
+    "containerList": [],
+    "dimensionList": []
+  },
+  "Settings": {
+    "advancedTooltips": "ALWAYS",
+    "dropItemsFromInventory": true,
+    "dropArmorFromInventory": true,
+    "canPickupItems": false,
+    "itemsPickupDelay": 15,
+    "hideInJEI_REI": true,
+    "canUseItems": false,
+    "containerListWhitelist": false,
+    "canBreakBlocks": false,
+    "canRightClickBlocks": false,
+    "applyToFakePlayers": false
+  }
+}

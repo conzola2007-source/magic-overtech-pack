@@ -1,0 +1,31 @@
+{
+  "Restriction Data": {
+    "stage": "end_eyes",
+    "itemList": [
+      {
+        "item": "minecraft:ender_eye"
+      }
+    ],
+    "modList": [],
+    "tagList": [],
+    "fluidList": [],
+    "exceptionList": [],
+    "structureList": [],
+    "mobList": [],
+    "containerList": [],
+    "dimensionList": []
+  },
+  "Settings": {
+    "advancedTooltips": "ALWAYS",
+    "dropItemsFromInventory": false,
+    "dropArmorFromInventory": false,
+    "canPickupItems": true,
+    "itemsPickupDelay": 15,
+    "hideInJEI_REI": false,
+    "canUseItems": false,
+    "containerListWhitelist": false,
+    "canBreakBlocks": true,
+    "canRightClickBlocks": false,
+    "applyToFakePlayers": false
+  }
+}

@@ -1,0 +1,329 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "grounded_age"
+	group: ""
+	icon: "minecraft:iron_pickaxe"
+	id: "1A00000000000000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Tinkers' Construct is your main tool system."
+				"The important idea is simple: your tools are not disposable. You build them, repair them, replace parts, and add modifiers over time."
+			]
+			icon: "tconstruct:crafting_station"
+			id: "1A00500000000001"
+			tasks: [{
+				id: "1A00600000000001"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			title: "Crafting Station"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"The Tinker Station is where early tools are assembled and modified."
+				"This is the first place you should start thinking of tools as projects instead of one-time crafts."
+			]
+			icon: "tconstruct:tinker_station"
+			id: "1A00500000000002"
+			tasks: [{
+				id: "1A00600000000002"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			title: "Tinker Station"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"The Part Builder lets you shape the pieces that make up your tools."
+				"In Tinkers, the resource is literal: the materials you use become the tool's stats and traits."
+			]
+			icon: "tconstruct:part_builder"
+			id: "1A00500000000003"
+			tasks: [{
+				id: "1A00600000000003"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			title: "Build the Parts"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1A00500000000001"
+				"1A00500000000002"
+				"1A00500000000003"
+			]
+			description: [
+				"Use Puny Smelting as your guide from here."
+				"Now that you have the basic stations, this book will show you how to make the heater, melter, casting setup, and your first Tinkers pickaxe."
+				"You probably spawned with it already, but this quest gives you a spare just in case."
+			]
+			icon: "tconstruct:puny_smelting"
+			id: "1A00500000000004"
+			rewards: [{
+				command: "/give {p} tconstruct:puny_smelting 1"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "1A00700000000004"
+				title: "Puny Smelting"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A00600000000004"
+				title: "I will use Puny Smelting"
+				type: "checkmark"
+			}]
+			title: "Puny Smelting"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A00500000000004"]
+			description: [
+				"Craft a Tinkers Pickaxe."
+				"Use the melter path from Puny Smelting to get there. This proves you can turn the basic Tinkers stations into an actual permanent tool."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "1A00500000000020"
+			tasks: [{
+				id: "1A00600000000020"
+				item: {
+					Count: 1
+					id: "tconstruct:pickaxe"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Your First Pickaxe"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00500000000020"]
+			description: [
+				"You have the basics, so here is a starter sword."
+				"It should carry Improvable. That modifier is normally expensive, so this is the pack tossing you a bone early."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:sword"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "1A00500000000040"
+			rewards: [{
+				command: "/give {p} tconstruct:sword{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:iron\",\"tconstruct:iron\",\"tconstruct:iron\"],tic_upgrades:[{name:\"tinkerslevellingaddon:improvable\",level:1}]} 1"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "1A00700000000040"
+				title: "Starter Improvable Sword"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A00600000000040"
+				title: "Claim your starter sword"
+				type: "checkmark"
+			}]
+			title: "Starter Sword"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Apotheosis is the gear upgrade system."
+				"It keeps some RNG, but gives you resources and tables that let you salvage bad loot, reroll affixes, improve gems, and push gear toward what you actually want."
+				"This is a reforging table. It applies early affixes to compatible equipment and turns random loot into build pieces."
+			]
+			icon: "apotheosis:simple_reforging_table"
+			id: "1A10500000000002"
+			tasks: [{
+				id: "1A10600000000002"
+				item: "apotheosis:simple_reforging_table"
+				type: "item"
+			}]
+			title: "Apotheosis: Better Gear"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A10500000000002"]
+			description: [
+				"The Salvaging Table breaks unwanted affix gear into useful material."
+				"This is how bad rolls stop being pure trash and start feeding the next attempt."
+			]
+			icon: "apotheosis:salvaging_table"
+			id: "1A10500000000003"
+			tasks: [{
+				id: "1A10600000000003"
+				item: "apotheosis:salvaging_table"
+				type: "item"
+			}]
+			title: "Recover the Materials"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A10500000000003"]
+			description: [
+				"Apply any Apotheosis gem to a piece of gear."
+				"Gems are one of the big ways Apotheosis turns equipment into real scaling. This is the point where gear stops being just loot and starts becoming a build."
+			]
+			icon: "apotheosis:gem"
+			id: "1A10500000000004"
+			tasks: [{
+				id: "1A10600000000004"
+				title: "I applied any Apotheosis gem"
+				type: "custom"
+			}]
+			title: "Apply Any Gem"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A10500000000003"]
+			description: [
+				"Apply any Apotheosis affix to a piece of gear."
+				"This proves you understand the core loop: loot can roll badly, but salvaging and reforging let you push equipment toward something useful."
+			]
+			icon: "apotheosis:simple_reforging_table"
+			id: "1A10500000000006"
+			tasks: [{
+				id: "1A10600000000006"
+				title: "I applied any Apotheosis affix"
+				type: "custom"
+			}]
+			title: "Apply Any Affix"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Iron's Spells is your magic system."
+				"It takes a lot of the RNG out because you can craft toward specific spells and build the rarity of the magic you want."
+			]
+			icon: "irons_spellbooks:copper_spell_book"
+			id: "1A20500000000001"
+			tasks: [{
+				id: "1A20600000000001"
+				item: "irons_spellbooks:copper_spell_book"
+				type: "item"
+			}]
+			title: "Iron's Spells: Magic"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A20500000000001"]
+			description: [
+				"The Inscription Table is where you start writing and upgrading spells on scrolls."
+				"This is the base-level point where magic becomes a craftable path, not just loot."
+			]
+			icon: "irons_spellbooks:inscription_table"
+			id: "1A20500000000003"
+			tasks: [{
+				id: "1A20600000000003"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			title: "Write the Scrolls"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1A20500000000003"]
+			description: [
+				"Obtain any spell scroll."
+				"Maybe it is good, maybe it is trash. Either way, you found the core item that turns magic into something you can build around."
+			]
+			icon: "irons_spellbooks:scroll"
+			id: "1A20500000000002"
+			rewards: [{
+				command: "/execute as {p} run createScroll irons_spellbooks:magic_missile 3"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "1A20700000000002"
+				title: "Level 3 Magic Missile"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A20600000000002"
+				item: "irons_spellbooks:scroll"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Any Scroll"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A20500000000002"]
+			description: [
+				"Put any spell into any spell book."
+				"Use the Inscription Table with a spell scroll and your spell book. Once the spell is stored in the book, click the task in this quest with the book in your inventory or spell book slot."
+			]
+			icon: "irons_spellbooks:copper_spell_book"
+			id: "1A20500000000004"
+			tasks: [{
+				id: "1A20600000000004"
+				title: "Fill any spell book"
+				type: "custom"
+			}]
+			title: "Fill the Spell Book"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1A00500000000040"
+				"1A10500000000004"
+				"1A10500000000006"
+				"1A20500000000004"
+			]
+			description: [
+				"Novice complete."
+				"You now have the base loop for Tinkers tools, Apotheosis gear upgrading, and Iron's Spells magic. Apprentice Artificer starts turning those foundations into real buildcraft."
+			]
+			icon: "irons_spellbooks:arcane_anvil"
+			id: "1A00500000000005"
+			rewards: [{
+				command: "/decstages add {p} grounded_age"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "1A00700000000050"
+				title: "Novice Stage"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A00600000000050"
+				title: "Become an Apprentice Artificer"
+				type: "checkmark"
+			}]
+			title: "Become an Apprentice Artificer"
+			x: 0.0d
+			y: -4.0d
+		}
+	]
+	title: "Novice"
+}

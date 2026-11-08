@@ -1,0 +1,54 @@
+
+[general]
+	#MAX Rate Capacity(RF/t)
+	rateCapacity = 100000
+	#Fluid Transmuter valid tag prefix list
+	fluid_transmuter_patterns = ["forge:"]
+	#Fluid Transmuter invalid tag prefix list
+	fluid_transmuter_exclude_patterns = ["forge:water", "forge:lava"]
+
+[avaritia]
+	#Probability of a neutron pile is dropped by condensing modifier
+	condensingDropProbability = 0.003
+
+[mekanism]
+	#Allow Mekaplate can use shield of electricity
+	mekaplateUseShield = true
+
+[apotheosis]
+	#Maximum level of enchantments granted by override
+	overrideLevelLimit = 255
+
+["ars nouveau"]
+	#Internal cooldown ticks of spellcasting
+	reactiveCooldown = 10
+
+[curios]
+	#Ticks remaining on the gauntlet after a gauntlet shot hits
+	gantletRemainTicks = 40
+	#Blacklist of entities that do not drop the glove.
+	gloveDropBlacklist = ["minecraft:armor_stand", "dummmmmmy:target_dummy"]
+	#Use gloveDropBlacklist as whitelist
+	gloveDropBlacklistAsWhitelist = false
+
+#Provided by AddonAPI:
+#Module Options
+[modules]
+	"TiCEX Original Materials and Modifiers" = true
+	"TiCEX Original Utilities" = true
+	"Avaritia Compat" = true
+	"Mekanism Compat" = false
+	"Draconic Evolution Compat" = true
+	"SlashBlade Compat" = false
+	"Apotheosis Compat" = true
+	"TaCz Compat" = false
+	"Create Compat" = false
+	"Iron's Spells n' Spellbooks Compat" = true
+	"ProjectE Compat" = false
+	"CC:Tweaked Compat" = false
+	"Psi Compat" = false
+	"Curios API Compat" = true
+	"Botania Compat" = false
+	"Ars Nouveau Compat" = false
+	"JEI Compat" = true
+

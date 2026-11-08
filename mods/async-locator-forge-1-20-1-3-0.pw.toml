@@ -1,0 +1,12 @@
+name = "Async Locator"
+filename = "async-locator-forge-1.20-1.3.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/4603/343/async-locator-forge-1.20-1.3.0.jar"
+hash-format = "sha1"
+hash = "fa8e3d65644e5bf1ea62f1ba3c94b0982dfb7357"
+
+[update.curseforge]
+file-id = 4603343
+project-id = 625069

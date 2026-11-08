@@ -1,0 +1,14 @@
+{
+  "_help": {
+    "enableUpdateChecker": "true: when a player joins, the server checks online whether a newer version of the mod exists and tells the player in chat. false: no check.",
+    "checkDelayTicks": "How long after joining the check starts, in ticks (20 ticks = 1 second).",
+    "connectTimeoutMillis": "How long to wait for the update server to accept the connection, in milliseconds.",
+    "readTimeoutMillis": "How long to wait for the version list to arrive, in milliseconds.",
+    "notifyOnlyOncePerRun": "true: the message about a new version is shown only once until the server or game restarts. false: on every join."
+  },
+  "enableUpdateChecker": true,
+  "checkDelayTicks": 200,
+  "connectTimeoutMillis": 2500,
+  "readTimeoutMillis": 4000,
+  "notifyOnlyOncePerRun": true
+}

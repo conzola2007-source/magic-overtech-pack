@@ -1,0 +1,12 @@
+name = "Progressive Bosses"
+filename = "progressivebosses-4.3.12.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7723/295/progressivebosses-4.3.12.jar"
+hash-format = "sha1"
+hash = "5ec938a9e975ec49ae461d6ca1dd6e798a1d0dbc"
+
+[update.curseforge]
+file-id = 7723295
+project-id = 289466

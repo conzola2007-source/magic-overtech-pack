@@ -1,0 +1,12 @@
+name = "Chat Heads"
+filename = "chat_heads-0.15.7-forge-1.20.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8642/487/chat_heads-0.15.7-forge-1.20.jar"
+hash-format = "sha1"
+hash = "80582e413216eb014d83252b05c731a4a151fe9b"
+
+[update.curseforge]
+file-id = 8642487
+project-id = 407206

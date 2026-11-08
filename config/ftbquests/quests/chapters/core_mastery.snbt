@@ -1,0 +1,455 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "core_mastery"
+	group: ""
+	icon: "apotheosis:mythic_material"
+	id: "2C00000000000000"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2B00500000000005"]
+			description: [
+				"Defeat the Ender Dragon."
+				"Apprentice Artificer unlocks the End route. Paragon Of Power starts by proving you actually pushed through that gate and cleared the Dragon fight."
+			]
+			icon: "minecraft:dragon_head"
+			id: "2C00500000000001"
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "2C00600000000001"
+				title: "Defeat the Ender Dragon"
+				type: "advancement"
+			}]
+			title: "Ender Dragon"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Level any Tinkers weapon to 8."
+				"This is the weapon proof: a blade that has been used, improved, and pushed past ordinary Tinkers gear."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:cleaver"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "2C00500000000002"
+			tasks: [{
+				id: "2C00600000000002"
+				title: "Obtain any level 8+ Tinkers weapon"
+				type: "custom"
+			}]
+			title: "The Blade Unstoppable"
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Forge one Tinkers armor piece into a true defensive artifact."
+				"It must have Diamond, Emerald, Netherite, and the Tinkers Protection ability on the same armor piece."
+				"Protection is a Tinkers ability here, not a vanilla enchantment. One level is enough."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:plate_chestplate"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "2C00500000000003"
+			tasks: [{
+				id: "2C00600000000003"
+				title: "Obtain a Diamond/Emerald/Netherite armor piece with Protection"
+				type: "custom"
+			}]
+			title: "The Armor Impenetrable"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Create one unbreakable Tinkers tool."
+				"This is the tool proof: a permanent workhorse that can carry the base through the next age without breaking."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "2C00500000000004"
+			tasks: [{
+				id: "2C00600000000004"
+				title: "Obtain an unbreakable Tinkers tool"
+				type: "custom"
+			}]
+			title: "The Tool Unbreakable"
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain a Godforged Pearl."
+				"This is the Mythic Apotheosis material. It proves you have moved past normal affix gear and can work with the late Apotheosis upgrade loop."
+			]
+			icon: "apotheosis:mythic_material"
+			id: "2C10500000000001"
+			tasks: [{
+				id: "2C10600000000003"
+				item: "apotheosis:mythic_material"
+				type: "item"
+			}]
+			title: "Godforged Pearl"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain any Perfect gem."
+				"Perfect gems are the Ancient-quality gem tier. This is the gem stretch goal for Apotheosis mastery, but it does not require full Ancient gear."
+			]
+			icon: "apotheosis:gem_dust"
+			id: "2C10500000000003"
+			tasks: [{
+				id: "2C10600000000004"
+				title: "Obtain any Perfect gem"
+				type: "custom"
+			}]
+			title: "Perfect Gem"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain any Mythic/Flawless armor piece."
+				"This keeps the armor requirement meaningful without forcing the player into full Ancient gear before Draconic opens."
+				"{@pagebreak}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C10500000000004"
+			tasks: [{
+				id: "2C10600000000005"
+				title: "Obtain any Mythic/Flawless armor piece"
+				type: "custom"
+			}]
+			title: "Mythic Armor"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain Legendary Ink."
+				"This proves you have reached the top ink tier and can push spell scaling into the late game."
+			]
+			icon: "irons_spellbooks:legendary_ink"
+			id: "2C20500000000001"
+			tasks: [{
+				advancement: "irons_spellbooks:irons_spellbooks/ink_legendary"
+				criterion: ""
+				id: "2C20600000000001"
+				title: "Obtain Legendary Ink"
+				type: "advancement"
+			}]
+			title: "Legendary Ink"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain a special spell book."
+				"The generic upgrade-line books do not count here. Bring one of the school-specific books, such as Blaze, Ice, Druidic, Dragonskin, or another special spell book."
+			]
+			icon: "irons_spellbooks:blaze_spell_book"
+			id: "2C20500000000002"
+			tasks: [{
+				id: "2C20600000000002"
+				title: "Obtain a special spell book"
+				type: "custom"
+			}]
+			title: "Obtain Spellbook"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C00500000000001"]
+			description: [
+				"Obtain any Iron's Spells wand or staff."
+				"Any real Iron's Spells staff counts, and the Hither-Thither Wand counts. Sublux items are not part of this requirement."
+			]
+			icon: "irons_spellbooks:pyrium_staff"
+			id: "2C20500000000003"
+			tasks: [{
+				id: "2C20600000000003"
+				title: "Obtain any wand or staff"
+				type: "custom"
+			}]
+			title: "Wand or Staff"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2C00500000000002"
+				"2C00500000000003"
+				"2C00500000000004"
+				"2C10500000000001"
+				"2C10500000000003"
+				"2C10500000000004"
+				"2C20500000000001"
+				"2C20500000000002"
+				"2C20500000000003"
+			]
+			description: [
+				"Paragon Of Power complete."
+				"Once Tinkers, Apotheosis, and Iron's Spells all have post-Dragon proof, the team is ready to become Dragon Wielders."
+			]
+			icon: "draconicevolution:awakened_core"
+			id: "2C00500000000005"
+			rewards: [{
+				command: "/decstages add {p} draconic_age"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "2C00700000000005"
+				title: "Unlock Dragon Wielder"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2C00600000000005"
+				title: "Become a Dragon Wielder"
+				type: "checkmark"
+			}]
+			title: "Become a Dragon Wielder"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: one stack of Gold Ingots."
+			]
+			icon: "saintsdragons:raevyx_egg"
+			id: "2C30500000000001"
+			rewards: [{
+				command: "/give {p} saintsdragons:raevyx_egg 1"
+				elevate_perms: true
+				id: "2C30700000000001"
+				title: "Raevyx Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000001"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 64L
+				id: "2C30800000000001"
+				item: "minecraft:gold_ingot"
+				title: "Submit one stack of Gold Ingots"
+				type: "item"
+			}]
+			title: "Raevyx Egg"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: one stack of Coal."
+			]
+			icon: "saintsdragons:stegonaut_egg"
+			id: "2C30500000000002"
+			rewards: [{
+				command: "/give {p} saintsdragons:stegonaut_egg 1"
+				elevate_perms: true
+				id: "2C30700000000002"
+				title: "Stegonaut Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000002"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 64L
+				id: "2C30800000000002"
+				item: "minecraft:coal"
+				title: "Submit one stack of Coal"
+				type: "item"
+			}]
+			title: "Stegonaut Egg"
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: one stack of Iron Ingots."
+			]
+			icon: "saintsdragons:cindervane_egg"
+			id: "2C30500000000003"
+			rewards: [{
+				command: "/give {p} saintsdragons:cindervane_egg 1"
+				elevate_perms: true
+				id: "2C30700000000003"
+				title: "Cindervane Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000003"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 64L
+				id: "2C30800000000003"
+				item: "minecraft:iron_ingot"
+				title: "Submit one stack of Iron Ingots"
+				type: "item"
+			}]
+			title: "Cindervane Egg"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: one stack of Diamonds."
+			]
+			icon: "saintsdragons:ignivorus_egg"
+			id: "2C30500000000004"
+			rewards: [{
+				command: "/give {p} saintsdragons:ignivorus_egg 1"
+				elevate_perms: true
+				id: "2C30700000000004"
+				title: "Ignivorus Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000004"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 64L
+				id: "2C30800000000004"
+				item: "minecraft:diamond"
+				title: "Submit one stack of Diamonds"
+				type: "item"
+			}]
+			title: "Ignivorus Egg"
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: 16 Netherite Ingots."
+			]
+			icon: "saintsdragons:volitans_egg"
+			id: "2C30500000000005"
+			rewards: [{
+				command: "/give {p} saintsdragons:volitans_egg 1"
+				elevate_perms: true
+				id: "2C30700000000005"
+				title: "Volitans Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000005"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 16L
+				id: "2C30800000000005"
+				item: "minecraft:netherite_ingot"
+				title: "Submit 16 Netherite Ingots"
+				type: "item"
+			}]
+			title: "Volitans Egg"
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Turn in one vanilla Dragon Egg."
+				"Additional cost: 4 Netherite Ingots."
+			]
+			icon: "saintsdragons:varasuchus_egg"
+			id: "2C30500000000006"
+			rewards: [{
+				command: "/give {p} saintsdragons:varasuchus_egg 1"
+				elevate_perms: true
+				id: "2C30700000000006"
+				title: "Varasuchus Egg"
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "2C30600000000006"
+				item: "minecraft:dragon_egg"
+				title: "Submit any eligible dragon egg"
+				type: "item"
+			}
+			{
+				consume_items: true
+				count: 4L
+				id: "2C30800000000006"
+				item: "minecraft:netherite_ingot"
+				title: "Submit 4 Netherite Ingots"
+				type: "item"
+			}]
+			title: "Varasuchus Egg"
+			x: 6.0d
+			y: -5.0d
+		}
+	]
+	title: "Paragon Of Power"
+}

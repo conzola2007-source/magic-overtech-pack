@@ -1,0 +1,12 @@
+name = "Continuity"
+filename = "continuity-3.0.0+1.20.1.forge.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5981/334/continuity-3.0.0%2B1.20.1.forge.jar"
+hash-format = "sha1"
+hash = "816c1bb15c3686f67143dabced87bd4811cc43d2"
+
+[update.curseforge]
+file-id = 5981334
+project-id = 531351

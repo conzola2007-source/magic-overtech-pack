@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "killed_echo_of_tyros": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "irons_spellbooks:fire_boss"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_echo_of_tyros"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+name = "Butchery"
+filename = "butchery-5.3.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9112/343/butchery-5.3.1-forge-1.20.1.jar"
+hash-format = "sha1"
+hash = "6d13f93b8ca637c8c7c1132b95836f4fedea6b4f"
+
+[update.curseforge]
+file-id = 9112343
+project-id = 973620

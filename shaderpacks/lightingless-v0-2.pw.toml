@@ -1,0 +1,8 @@
+name = "lightingless v0.2.zip"
+filename = "lightingless v0.2.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/r1TElRR8/versions/KMZ4n3zQ/lightingless%20v0.2.zip"
+hash-format = "sha1"
+hash = "682f2268d457a7eac74cbe7c02434aff4078b5e5"

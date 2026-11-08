@@ -1,0 +1,12 @@
+name = "MineColonies"
+filename = "minecolonies-1.20.1-1.1.1301.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9058/213/minecolonies-1.20.1-1.1.1301.jar"
+hash-format = "sha1"
+hash = "33c10d6a9a6cb5d1f515a366e2286366eb68069d"
+
+[update.curseforge]
+file-id = 9058213
+project-id = 245506

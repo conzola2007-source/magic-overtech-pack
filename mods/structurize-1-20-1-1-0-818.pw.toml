@@ -1,0 +1,12 @@
+name = "Structurize"
+filename = "structurize-1.20.1-1.0.818.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8610/456/structurize-1.20.1-1.0.818.jar"
+hash-format = "sha1"
+hash = "432c949c9023aedc84f8c40b8b629e2357e506de"
+
+[update.curseforge]
+file-id = 8610456
+project-id = 298744

@@ -1,0 +1,12 @@
+name = "Tinkers' Levelling Addon"
+filename = "TinkersLevellingAddon-1.20.1-1.5.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9230/312/TinkersLevellingAddon-1.20.1-1.5.0.jar"
+hash-format = "sha1"
+hash = "1ea1237699ec0b70d640185595e0facf597f3ba3"
+
+[update.curseforge]
+file-id = 9230312
+project-id = 709416

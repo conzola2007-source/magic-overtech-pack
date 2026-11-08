@@ -1,0 +1,12 @@
+name = "Realm RPG: Quests & Rewards"
+filename = "realmrpg_quests-0.1.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5388/398/realmrpg_quests-0.1.1-forge-1.20.1.jar"
+hash-format = "sha1"
+hash = "72aee7d095cee4a1ab1201cde5f34842b9564a6b"
+
+[update.curseforge]
+file-id = 5388398
+project-id = 1021783

@@ -1,0 +1,12 @@
+name = "Quark"
+filename = "Quark-4.0-462.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/6427/817/Quark-4.0-462.jar"
+hash-format = "sha1"
+hash = "9b0fb82995622a0070c00827c698c43b49d9d14b"
+
+[update.curseforge]
+file-id = 6427817
+project-id = 243121

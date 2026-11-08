@@ -1,0 +1,10 @@
+
+#Client Settings
+[client]
+	#Rendering with shaders for some tools/armors.
+	useShader = true
+	#If true, an icon will be displayed for the TiCEX-converted tool.
+	showToolIcon = true
+	#Rendering with extra model for armors.
+	useArmorModel = true
+

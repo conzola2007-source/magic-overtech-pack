@@ -1,0 +1,7 @@
+#切换白名单为黑名单
+#Changes the whitelist to a blacklist
+black_list_mode = false
+#白名单实体类型：
+#Whitelist Entity Types.
+entity_types = ["minecraft:cat", "minecraft:wolf"]
+

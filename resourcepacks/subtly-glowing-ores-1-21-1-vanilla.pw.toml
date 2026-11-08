@@ -1,0 +1,12 @@
+name = "Subtly Glowing Ores"
+filename = "Subtly Glowing Ores 1.21.1 vanilla.zip"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5822/260/Subtly%20Glowing%20Ores%201.21.1%20vanilla.zip"
+hash-format = "sha1"
+hash = "2f11f6e73704913fe77c1090e2dd633dd00edd09"
+
+[update.curseforge]
+file-id = 5822260
+project-id = 662592

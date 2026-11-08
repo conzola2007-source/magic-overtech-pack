@@ -1,0 +1,12 @@
+name = "Sophisticated Storage"
+filename = "sophisticatedstorage-1.20.1-1.5.13.2212.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9385/402/sophisticatedstorage-1.20.1-1.5.13.2212.jar"
+hash-format = "sha1"
+hash = "ae98354b779e4c0011ddb51fae44a64646995c0a"
+
+[update.curseforge]
+file-id = 9385402
+project-id = 619320

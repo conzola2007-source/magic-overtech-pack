@@ -1,0 +1,12 @@
+name = "Loyal Companion"
+filename = "loyal-companions-forge-1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9289/900/loyal-companions-forge-1.20.1-2.0.0.jar"
+hash-format = "sha1"
+hash = "1c0bee5c93b73a336d2e0dbe9269607b44f367b0"
+
+[update.curseforge]
+file-id = 9289900
+project-id = 1532987

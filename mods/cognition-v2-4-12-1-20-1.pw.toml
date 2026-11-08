@@ -1,0 +1,12 @@
+name = "Cognition (Experience Obelisk)"
+filename = "Cognition-v2.4.12-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8127/25/Cognition-v2.4.12-1.20.1.jar"
+hash-format = "sha1"
+hash = "51f43857c6056ad281da36a61b3b6bd65a7306a4"
+
+[update.curseforge]
+file-id = 8127025
+project-id = 579484

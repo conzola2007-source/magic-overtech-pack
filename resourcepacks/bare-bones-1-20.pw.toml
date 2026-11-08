@@ -1,0 +1,12 @@
+name = "Bare Bones"
+filename = "Bare Bones 1.20.zip"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/4574/76/Bare%20Bones%201.20.zip"
+hash-format = "sha1"
+hash = "aaea400296f51e17f08d377ec5e3fe3fd9ebb5ca"
+
+[update.curseforge]
+file-id = 4574076
+project-id = 327786

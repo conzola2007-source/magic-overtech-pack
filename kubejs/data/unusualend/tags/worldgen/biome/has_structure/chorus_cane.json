@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "far_end:amethyst_forest",
+    "far_end:end_wilds",
+    "stellarity:blazing_dunes",
+    "stellarity:crystal_crags",
+    "stellarity:frosted_hills",
+    "stellarity:prismarine_forest",
+    "stellarity:the_hallow"
+  ]
+}

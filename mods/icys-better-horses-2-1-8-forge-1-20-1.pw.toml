@@ -1,0 +1,12 @@
+name = "Icy's Better Horses"
+filename = "icys-better-horses-2.1.8-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9361/628/icys-better-horses-2.1.8-forge-1.20.1.jar"
+hash-format = "sha1"
+hash = "d1f2fb3ef7c590311f257ee0368b36af11b1ff70"
+
+[update.curseforge]
+file-id = 9361628
+project-id = 1527172

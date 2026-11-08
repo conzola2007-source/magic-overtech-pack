@@ -1,0 +1,12 @@
+name = "TiCEX - Tinkers Construct EX"
+filename = "ticex-mc1.20.1-0.7.1-all.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9406/206/ticex-mc1.20.1-0.7.1-all.jar"
+hash-format = "sha1"
+hash = "6049b3f33dbffea2013bf108b74c0f8db230cab1"
+
+[update.curseforge]
+file-id = 9406206
+project-id = 1242469

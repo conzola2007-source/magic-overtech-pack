@@ -1,0 +1,12 @@
+
+["Integrated Minecraft"]
+
+	###########################################################################################################
+	## General settings.
+	###########################################################################################################
+	["Integrated Minecraft".General]
+		# Whether or not Integrated Minecraft disables some structures.
+		# Default: true
+		#
+		"Disable Structures" = true
+

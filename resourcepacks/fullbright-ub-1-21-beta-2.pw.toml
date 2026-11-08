@@ -1,0 +1,12 @@
+name = "Fullbright UB"
+filename = "Fullbright-UB-1.21-Beta.2.zip"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5200/822/Fullbright-UB-1.21-Beta.2.zip"
+hash-format = "sha1"
+hash = "770e50893fd23787a96b25d50fa58c2a2d6ca752"
+
+[update.curseforge]
+file-id = 5200822
+project-id = 572892

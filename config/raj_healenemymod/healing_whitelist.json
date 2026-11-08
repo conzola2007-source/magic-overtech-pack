@@ -1,0 +1,4 @@
+{
+  "IMPORTANT": "Leave whitelisted_mobs empty if you want most mobs to heal. Only add mob IDs here if you want to restrict healing to specific mobs.",
+  "whitelisted_mobs": []
+}

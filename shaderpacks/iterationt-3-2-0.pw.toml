@@ -1,0 +1,12 @@
+name = "interationRP"
+filename = "iterationT 3.2.0.zip"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8105/693/iterationT%203.2.0.zip"
+hash-format = "sha1"
+hash = "ddadd31e7c59cedadc1e704e5f83c872cb3d5e37"
+
+[update.curseforge]
+file-id = 8105693
+project-id = 1546329

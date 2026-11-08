@@ -1,0 +1,12 @@
+name = "KubeJS"
+filename = "kubejs-forge-2001.6.5-build.26.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8020/595/kubejs-forge-2001.6.5-build.26.jar"
+hash-format = "sha1"
+hash = "8b0cc9797d4ed00fd2d1002d58960af8b32012ae"
+
+[update.curseforge]
+file-id = 8020595
+project-id = 238086

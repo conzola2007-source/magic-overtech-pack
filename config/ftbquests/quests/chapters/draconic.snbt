@@ -1,0 +1,392 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "draconic"
+	group: ""
+	icon: "draconicevolution:awakened_core"
+	id: "3D00000000000000"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2C00500000000005"]
+			description: [
+				"Draconic Evolution is an advanced mod. The questbook is a proof path, not a full manual."
+				"Use Draconic's in-game guide for machine layout, fusion placement, modules, charging, and reactor details."
+				"Magic Overtech's special rule is energy: Create Crafts & Additions has been tuned so Alternators can produce serious FE. They are intended to help power Draconic progression in this pack."
+				"Dragon Hearts can exist before this stage, but the rest of Draconic opens here."
+			]
+			icon: "draconicevolution:info_tablet"
+			id: "3D00500000000001"
+			tasks: [{
+				id: "3D00600000000001"
+				title: "Read the Draconic note"
+				type: "checkmark"
+			}]
+			title: "Read the Guide"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3D00500000000001"]
+			description: [
+				"Obtain Draconium."
+				"This is the basic material checkpoint before Fusion Crafting and tiered Draconic gear."
+			]
+			icon: "draconicevolution:draconium_ingot"
+			id: "3D00500000000002"
+			tasks: [{
+				id: "3D00600000000002"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			title: "Draconium Ingot"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000002"]
+			description: [
+				"Build the center of the Fusion Crafting setup."
+				"The Crafting Core is the block everything else gathers around."
+			]
+			icon: "draconicevolution:crafting_core"
+			id: "3D00500000000003"
+			tasks: [{
+				id: "3D00600000000003"
+				item: "draconicevolution:crafting_core"
+				type: "item"
+			}]
+			title: "Crafting Core"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D00500000000002"]
+			description: [
+				"Build the earliest Fusion Crafting injectors."
+				"One injector is enough for quest progression. Build more for the actual setup when recipes need them."
+			]
+			icon: "draconicevolution:basic_crafting_injector"
+			id: "3D00500000000004"
+			tasks: [{
+				id: "3D00600000000004"
+				item: "draconicevolution:basic_crafting_injector"
+				type: "item"
+			}]
+			title: "Basic Injectors"
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3D00500000000003"
+				"3D00500000000004"
+			]
+			description: [
+				"Upgrade into Wyvern-tier Fusion Crafting."
+				"One injector is enough for quest progression. Build more for the actual setup when recipes need them."
+			]
+			icon: "draconicevolution:wyvern_crafting_injector"
+			id: "3D00500000000005"
+			tasks: [{
+				id: "3D00600000000005"
+				item: "draconicevolution:wyvern_crafting_injector"
+				type: "item"
+			}]
+			title: "Wyvern Injectors"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000005"]
+			description: [
+				"Craft the actual Draconic Evolution Wyvern Sword."
+				"This is the modular Draconic weapon path, not a Tinkers sword."
+			]
+			icon: "draconicevolution:wyvern_sword"
+			id: "3D00500000000006"
+			tasks: [{
+				id: "3D00600000000006"
+				item: "draconicevolution:wyvern_sword"
+				type: "item"
+			}]
+			title: "Wyvern Sword"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D00500000000005"]
+			description: [
+				"Craft the Wyvern Chestpiece."
+				"In this version, Draconic Evolution armor is chestpiece-based. There is no full Wyvern armor set."
+			]
+			icon: "draconicevolution:wyvern_chestpiece"
+			id: "3D00500000000007"
+			tasks: [{
+				id: "3D00600000000007"
+				item: "draconicevolution:wyvern_chestpiece"
+				type: "item"
+			}]
+			title: "Wyvern Chestpiece"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000005"]
+			description: [
+				"Craft a Tinkers pickaxe using the TiCEX Wyvern material."
+				"This proves the Draconic material bridge as an actual tool, not just loose crystals."
+			]
+			icon: "tconstruct:pickaxe"
+			id: "3D00500000000008"
+			tasks: [{
+				id: "3D00600000000008"
+				title: "Craft a Wyvern Tinkers pickaxe"
+				type: "custom"
+			}]
+			title: "Wyvern Pickaxe"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3D00500000000006"
+				"3D00500000000007"
+				"3D00500000000008"
+			]
+			description: [
+				"Have a Dragon Heart ready."
+				"You may already have this from the Ender Dragon. That is fine: this is the point where the page starts using it."
+			]
+			icon: "draconicevolution:dragon_heart"
+			id: "3D00500000000009"
+			tasks: [{
+				id: "3D00600000000009"
+				item: "draconicevolution:dragon_heart"
+				type: "item"
+			}]
+			title: "Dragon Heart"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000009"]
+			description: [
+				"Upgrade into Awakened-tier Fusion Crafting."
+				"The item is named Awakened Crafting Injector, but this is the Draconic-tier injector step. One injector is enough for quest progression."
+			]
+			icon: "draconicevolution:awakened_crafting_injector"
+			id: "3D0050000000000A"
+			tasks: [{
+				id: "3D0060000000000A"
+				item: "draconicevolution:awakened_crafting_injector"
+				type: "item"
+			}]
+			title: "Draconic Injectors"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D0050000000000A"]
+			description: [
+				"Craft the Draconic Sword."
+				"This is the main weapon checkpoint before the Chaos Guardian side of the page."
+			]
+			icon: "draconicevolution:draconic_sword"
+			id: "3D0050000000000B"
+			tasks: [{
+				id: "3D0060000000000B"
+				item: "draconicevolution:draconic_sword"
+				type: "item"
+			}]
+			title: "Draconic Sword"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D0050000000000A"]
+			description: [
+				"Craft the Draconic Chestpiece."
+				"This is the main armor checkpoint for the tier."
+			]
+			icon: "draconicevolution:draconic_chestpiece"
+			id: "3D0050000000000C"
+			tasks: [{
+				id: "3D0060000000000C"
+				item: "draconicevolution:draconic_chestpiece"
+				type: "item"
+			}]
+			title: "Draconic Chestpiece"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D0050000000000A"]
+			description: [
+				"Craft a Tinkers pickaxe using the TiCEX Draconic material."
+				"This keeps the TiCEX material bridge in the main loop as an actual tool."
+			]
+			icon: "tconstruct:pickaxe"
+			id: "3D0050000000000D"
+			tasks: [{
+				id: "3D0060000000000D"
+				title: "Craft a Draconic Tinkers pickaxe"
+				type: "custom"
+			}]
+			title: "Draconic Pickaxe"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3D0050000000000B"
+				"3D0050000000000C"
+				"3D0050000000000D"
+			]
+			description: [
+				"Kill the Chaos Guardian and obtain a Chaos Shard."
+				"This is the hard proof that Chaotic progression is now real."
+			]
+			icon: "draconicevolution:chaos_shard"
+			id: "3D0050000000000E"
+			tasks: [{
+				id: "3D0060000000000E"
+				item: "draconicevolution:chaos_shard"
+				type: "item"
+			}]
+			title: "Chaos Guardian"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D0050000000000E"]
+			description: [
+				"Upgrade into Chaotic-tier Fusion Crafting."
+				"This opens the final equipment tier on this page. One injector is enough for quest progression."
+			]
+			icon: "draconicevolution:chaotic_crafting_injector"
+			id: "3D0050000000000F"
+			tasks: [{
+				id: "3D0060000000000F"
+				item: "draconicevolution:chaotic_crafting_injector"
+				type: "item"
+			}]
+			title: "Chaotic Injectors"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D0050000000000F"]
+			description: [
+				"Craft a Chaotic Core."
+				"This is the main component gate for Chaotic equipment and the TiCEX Chaotic material."
+			]
+			icon: "draconicevolution:chaotic_core"
+			id: "3D00500000000010"
+			tasks: [{
+				id: "3D00600000000010"
+				item: "draconicevolution:chaotic_core"
+				type: "item"
+			}]
+			title: "Chaotic Core"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000010"]
+			description: [
+				"Craft the Chaotic Sword."
+				"This is the first step to killing God."
+			]
+			icon: "draconicevolution:chaotic_sword"
+			id: "3D00500000000011"
+			tasks: [{
+				id: "3D00600000000011"
+				item: "draconicevolution:chaotic_sword"
+				type: "item"
+			}]
+			title: "First Step to Killing God"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D00500000000010"]
+			description: [
+				"Craft the Chaotic Chestpiece."
+				"This is the final Draconic Evolution armor checkpoint for the stage."
+			]
+			icon: "draconicevolution:chaotic_chestpiece"
+			id: "3D00500000000012"
+			tasks: [{
+				id: "3D00600000000012"
+				item: "draconicevolution:chaotic_chestpiece"
+				type: "item"
+			}]
+			title: "Chaotic Chestpiece"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000010"]
+			description: [
+				"Craft a Tinkers pickaxe using the TiCEX Chaotic material."
+				"This is the TiCEX Chaotic tool proof."
+			]
+			icon: "tconstruct:pickaxe"
+			id: "3D00500000000013"
+			tasks: [{
+				id: "3D00600000000013"
+				title: "Craft a Chaotic Tinkers pickaxe"
+				type: "custom"
+			}]
+			title: "Chaotic Pickaxe"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3D00500000000011"
+				"3D00500000000012"
+				"3D00500000000013"
+			]
+			description: [
+				"Dragon Wielder complete."
+				"You have proven the fusion loop, the module gear loop, the Chaos Guardian, and all three TiCEX pickaxe tiers. True Legend is now open."
+			]
+			icon: "avaritia:infinity_catalyst"
+			id: "3D00500000000014"
+			rewards: [{
+				command: "/decstages add {p} chaotic_age"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "3D00700000000014"
+				title: "Unlock Chaotic Progression"
+				type: "command"
+			}
+			{
+				command: "/decstages add {p} infinity_age"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "3D00700000000015"
+				title: "Unlock True Legend"
+				type: "command"
+			}
+			{
+				id: "3D00700000000016"
+				item: "explorerscompass:explorerscompass"
+				title: "Explorer's Compass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D00600000000014"
+				title: "Become a True Legend"
+				type: "checkmark"
+			}]
+			title: "Become a True Legend"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Dragon Wielder"
+}

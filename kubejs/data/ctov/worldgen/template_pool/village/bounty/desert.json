@@ -1,0 +1,5 @@
+{
+  "name": "ctov:village/bounty/desert",
+  "fallback": "minecraft:empty",
+  "elements": []
+}

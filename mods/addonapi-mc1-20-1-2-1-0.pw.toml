@@ -1,0 +1,12 @@
+name = "Moff's AddonAPI-DynLoad"
+filename = "addonapi-mc1.20.1-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8143/523/addonapi-mc1.20.1-2.1.0.jar"
+hash-format = "sha1"
+hash = "af2a53fb028233c0b838ecefe7746239a75a3465"
+
+[update.curseforge]
+file-id = 8143523
+project-id = 1242459

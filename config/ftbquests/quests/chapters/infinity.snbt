@@ -1,0 +1,1507 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "infinity"
+	group: ""
+	icon: "avaritia:infinity_catalyst"
+	id: "4F00000000000000"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D00500000000014"]
+			description: ["The beginning of the final checklist."]
+			icon: "avaritia:infinity_catalyst"
+			id: "4F00500000000001"
+			tasks: [{
+				id: "4F00600000000001"
+				title: "Begin Infinity"
+				type: "checkmark"
+			}]
+			title: "The Beginning of the End"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Ender Dragon."]
+			icon: "minecraft:dragon_head"
+			id: "4F00500000000002"
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "4F00600000000002"
+				title: "Defeat the Ender Dragon"
+				type: "advancement"
+			}]
+			title: "Ender Dragon"
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Wither."]
+			icon: "minecraft:nether_star"
+			id: "4F00500000000003"
+			tasks: [{
+				advancement: "progressivebosses:wither_death"
+				criterion: ""
+				id: "4F00600000000003"
+				title: "Defeat the Wither"
+				type: "advancement"
+			}]
+			title: "Wither"
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat an Elder Guardian."]
+			icon: "minecraft:prismarine_shard"
+			id: "4F00500000000004"
+			tasks: [{
+				advancement: "magic_overtech:bosses/elder_guardian"
+				criterion: ""
+				id: "4F00600000000004"
+				title: "Defeat an Elder Guardian"
+				type: "advancement"
+			}]
+			title: "Elder Guardian"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Valkyrie Queen."]
+			icon: "aether:valkyrie_lance"
+			id: "4F00500000000005"
+			tasks: [{
+				advancement: "aether:silver_dungeon"
+				criterion: ""
+				id: "4F00600000000005"
+				title: "Defeat the Valkyrie Queen"
+				type: "advancement"
+			}]
+			title: "Valkyrie Queen"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Sun Spirit."]
+			icon: "aether:sun_altar"
+			id: "4F00500000000006"
+			tasks: [{
+				advancement: "aether:gold_dungeon"
+				criterion: ""
+				id: "4F00600000000006"
+				title: "Defeat the Sun Spirit"
+				type: "advancement"
+			}]
+			title: "Sun Spirit"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat The Dead King."]
+			icon: "irons_spellbooks:dead_king_phylactery"
+			id: "4F00500000000007"
+			tasks: [{
+				advancement: "magic_overtech:bosses/dead_king"
+				criterion: ""
+				id: "4F00600000000007"
+				title: "Defeat The Dead King"
+				type: "advancement"
+			}]
+			title: "The Dead King"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Echo of Tyros."]
+			icon: "irons_spellbooks:pyrium_staff"
+			id: "4F00500000000008"
+			tasks: [{
+				advancement: "magic_overtech:bosses/echo_of_tyros"
+				criterion: ""
+				id: "4F00600000000008"
+				title: "Defeat Echo of Tyros"
+				type: "advancement"
+			}]
+			title: "Echo of Tyros"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Ashlord."]
+			icon: "block_factorys_bosses:dragon_bones_chestplate"
+			id: "4F00500000000009"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_dragon"
+				criterion: ""
+				id: "4F00600000000009"
+				title: "Defeat Ashlord"
+				type: "advancement"
+			}]
+			title: "Ashlord"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Skor."]
+			icon: "minecraft:blue_ice"
+			id: "4F0050000000000A"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_yeti"
+				criterion: ""
+				id: "4F0060000000000A"
+				title: "Defeat Skor"
+				type: "advancement"
+			}]
+			title: "Skor"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Sirok."]
+			icon: "minecraft:sand"
+			id: "4F0050000000000B"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_sandworm"
+				criterion: ""
+				id: "4F0060000000000B"
+				title: "Defeat Sirok"
+				type: "advancement"
+			}]
+			title: "Sirok"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Helvar."]
+			icon: "block_factorys_bosses:knight_sword"
+			id: "4F0050000000000C"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_underworld_knight"
+				criterion: ""
+				id: "4F0060000000000C"
+				title: "Defeat Helvar"
+				type: "advancement"
+			}]
+			title: "Helvar"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Nerakyss."]
+			icon: "block_factorys_bosses:kraken_trident"
+			id: "4F0050000000000D"
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_kraken"
+				criterion: ""
+				id: "4F0060000000000D"
+				title: "Defeat Nerakyss"
+				type: "advancement"
+			}]
+			title: "Nerakyss"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Night Lich."]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "4F0050000000000E"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+				criterion: ""
+				id: "4F0060000000000E"
+				title: "Defeat the Night Lich"
+				type: "advancement"
+			}]
+			title: "Night Lich"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Obsidilith."]
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			id: "4F0050000000000F"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+				criterion: ""
+				id: "4F0060000000000F"
+				title: "Defeat the Obsidilith"
+				type: "advancement"
+			}]
+			title: "Obsidilith"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Nether Gauntlet."]
+			icon: "bosses_of_mass_destruction:blazing_eye"
+			id: "4F00500000000010"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+				criterion: ""
+				id: "4F00600000000010"
+				title: "Defeat the Nether Gauntlet"
+				type: "advancement"
+			}]
+			title: "Nether Gauntlet"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Void Blossom."]
+			icon: "bosses_of_mass_destruction:void_thorn"
+			id: "4F00500000000011"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+				criterion: ""
+				id: "4F00600000000011"
+				title: "Defeat the Void Blossom"
+				type: "advancement"
+			}]
+			title: "Void Blossom"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Ender Guardian."]
+			icon: "cataclysm:void_core"
+			id: "4F00500000000012"
+			tasks: [{
+				advancement: "cataclysm:kill_ender_guardian"
+				criterion: ""
+				id: "4F00600000000012"
+				title: "Defeat the Ender Guardian"
+				type: "advancement"
+			}]
+			title: "Ender Guardian"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Netherite Monstrosity."]
+			icon: "cataclysm:monstrous_horn"
+			id: "4F00500000000013"
+			tasks: [{
+				advancement: "cataclysm:kill_monstrosity"
+				criterion: ""
+				id: "4F00600000000013"
+				title: "Defeat the Netherite Monstrosity"
+				type: "advancement"
+			}]
+			title: "Netherite Monstrosity"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Ignis."]
+			icon: "cataclysm:ignitium_ingot"
+			id: "4F00500000000014"
+			tasks: [{
+				advancement: "cataclysm:kill_ignis"
+				criterion: ""
+				id: "4F00600000000014"
+				title: "Defeat Ignis"
+				type: "advancement"
+			}]
+			title: "Ignis"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat The Harbinger."]
+			icon: "cataclysm:witherite_ingot"
+			id: "4F00500000000015"
+			tasks: [{
+				advancement: "cataclysm:kill_harbinger"
+				criterion: ""
+				id: "4F00600000000015"
+				title: "Defeat The Harbinger"
+				type: "advancement"
+			}]
+			title: "The Harbinger"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat The Leviathan."]
+			icon: "cataclysm:abyssal_sacrifice"
+			id: "4F00500000000016"
+			tasks: [{
+				advancement: "cataclysm:kill_leviathan"
+				criterion: ""
+				id: "4F00600000000016"
+				title: "Defeat The Leviathan"
+				type: "advancement"
+			}]
+			title: "The Leviathan"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat the Ancient Remnant."]
+			icon: "cataclysm:ancient_metal_ingot"
+			id: "4F00500000000017"
+			tasks: [{
+				advancement: "cataclysm:kill_remnant"
+				criterion: ""
+				id: "4F00600000000017"
+				title: "Defeat the Ancient Remnant"
+				type: "advancement"
+			}]
+			title: "Ancient Remnant"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Maledictus."]
+			icon: "cataclysm:cursed_bow"
+			id: "4F00500000000018"
+			tasks: [{
+				advancement: "cataclysm:kill_maledictus"
+				criterion: ""
+				id: "4F00600000000018"
+				title: "Defeat Maledictus"
+				type: "advancement"
+			}]
+			title: "Maledictus"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Scylla."]
+			icon: "cataclysm:storm_eye"
+			id: "4F00500000000019"
+			tasks: [{
+				advancement: "cataclysm:kill_scylla"
+				criterion: ""
+				id: "4F00600000000019"
+				title: "Defeat Scylla"
+				type: "advancement"
+			}]
+			title: "Scylla"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F00500000000001"]
+			description: ["Defeat Luxtructosaurus."]
+			icon: "alexscaves:tectonic_shard"
+			id: "4F0050000000001A"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defeat_luxtructosaurus"
+				criterion: ""
+				id: "4F0060000000001A"
+				title: "Defeat Luxtructosaurus"
+				type: "advancement"
+			}]
+			title: "Luxtructosaurus"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4F00500000000002"
+				"4F00500000000003"
+				"4F00500000000004"
+				"4F00500000000005"
+				"4F00500000000006"
+				"4F00500000000007"
+				"4F00500000000008"
+				"4F00500000000009"
+				"4F0050000000000A"
+				"4F0050000000000B"
+				"4F0050000000000C"
+				"4F0050000000000D"
+				"4F0050000000000E"
+				"4F0050000000000F"
+				"4F00500000000010"
+				"4F00500000000011"
+				"4F00500000000012"
+				"4F00500000000013"
+				"4F00500000000014"
+				"4F00500000000015"
+				"4F00500000000016"
+				"4F00500000000017"
+				"4F00500000000018"
+				"4F00500000000019"
+				"4F0050000000001A"
+			]
+			description: ["All required bosses are defeated."]
+			icon: "avaritia:infinity_catalyst"
+			id: "4F0050000000001B"
+			tasks: [{
+				id: "4F0060000000001B"
+				title: "All required bosses defeated"
+				type: "checkmark"
+			}]
+			title: "All Bosses Defeated"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Sword."]
+			icon: "draconicevolution:chaotic_sword"
+			id: "4F0050000000001C"
+			tasks: [{
+				id: "4F0060000000001C"
+				consume_items: true
+				item: "draconicevolution:chaotic_sword"
+				type: "item"
+			}]
+			title: "Chaotic Sword"
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F0050000000001C"]
+			description: ["Gather symbolic trophies from the boss path."]
+			icon: "minecraft:nether_star"
+			id: "4F0050000000001D"
+			tasks: [
+				{
+					id: "4F0060000000001D"
+					consume_items: true
+					item: "minecraft:dragon_egg"
+					type: "item"
+				}
+				{
+					id: "4F0060000000001E"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "4F0060000000001F"
+					consume_items: true
+					item: "apotheosis:warden_tendril"
+					type: "item"
+				}
+				{
+					id: "4F00600000000020"
+					consume_items: true
+					item: "block_factorys_bosses:dragon_skull"
+					type: "item"
+				}
+				{
+					id: "4F00600000000073"
+					consume_items: true
+					item: "block_factorys_bosses:ice_gauntlet"
+					type: "item"
+				}
+				{
+					id: "4F00600000000074"
+					consume_items: true
+					item: "block_factorys_bosses:sandworm_gauntlet"
+					type: "item"
+				}
+				{
+					id: "4F00600000000075"
+					consume_items: true
+					item: "block_factorys_bosses:knight_sword"
+					type: "item"
+				}
+				{
+					id: "4F00600000000076"
+					consume_items: true
+					item: "block_factorys_bosses:kraken_trident"
+					type: "item"
+				}
+			]
+			title: "Boss Trophies"
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F0050000000001C"
+				"4F0050000000001D"
+			]
+			description: ["Craft the Sword of the Cosmos."]
+			icon: "avaritia:infinity_sword"
+			id: "4F0050000000001E"
+			rewards: [{
+				id: "4F0070000000001E"
+				item: "avaritia:infinity_sword"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000021"
+				title: "I bestow upon thee the power to kill gods."
+				type: "checkmark"
+			}]
+			title: "Sword of the Cosmos"
+			x: -9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Hoe."]
+			icon: "draconicevolution:chaotic_hoe"
+			id: "4F0050000000001F"
+			tasks: [{
+				id: "4F00600000000022"
+				consume_items: true
+				item: "draconicevolution:chaotic_hoe"
+				type: "item"
+			}]
+			title: "Chaotic Hoe"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F0050000000001F"]
+			description: ["Gather symbolic plantables and crops."]
+			icon: "minecraft:wheat_seeds"
+			id: "4F00500000000020"
+			tasks: [
+				{
+					id: "4F00600000000023"
+					consume_items: true
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000024"
+					consume_items: true
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "4F00600000000025"
+					consume_items: true
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "4F00600000000026"
+					consume_items: true
+					item: "minecraft:beetroot_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000027"
+					consume_items: true
+					item: "minecraft:pumpkin_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000028"
+					consume_items: true
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000029"
+					consume_items: true
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "4F0060000000002A"
+					consume_items: true
+					item: "minecraft:cactus"
+					type: "item"
+				}
+				{
+					id: "4F0060000000002B"
+					consume_items: true
+					item: "minecraft:bamboo"
+					type: "item"
+				}
+				{
+					id: "4F0060000000002C"
+					consume_items: true
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "4F00600000000077"
+					consume_items: true
+					item: "farmersdelight:tomato_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000078"
+					consume_items: true
+					item: "farmersdelight:cabbage_seeds"
+					type: "item"
+				}
+				{
+					id: "4F00600000000079"
+					consume_items: true
+					item: "farmersdelight:rice"
+					type: "item"
+				}
+				{
+					id: "4F0060000000007A"
+					consume_items: true
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "4F0060000000007B"
+					consume_items: true
+					item: "supplementaries:flax_seeds"
+					type: "item"
+				}
+			]
+			title: "Everything That Grows"
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F0050000000001F"
+				"4F00500000000020"
+			]
+			description: ["Craft Eternal Fertility."]
+			icon: "avaritia:infinity_hoe"
+			id: "4F00500000000021"
+			rewards: [{
+				id: "4F00700000000021"
+				item: "avaritia:infinity_hoe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F0060000000002D"
+				title: "I bestow upon thee the power to bring life."
+				type: "checkmark"
+			}]
+			title: "Eternal Fertility"
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Pickaxe."]
+			icon: "draconicevolution:chaotic_pickaxe"
+			id: "4F00500000000022"
+			tasks: [{
+				id: "4F0060000000002E"
+				consume_items: true
+				item: "draconicevolution:chaotic_pickaxe"
+				type: "item"
+			}]
+			title: "Chaotic Pickaxe"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F00500000000022"]
+			description: ["Gather symbolic ore blocks."]
+			icon: "minecraft:diamond_ore"
+			id: "4F00500000000023"
+			tasks: [
+				{
+					id: "4F0060000000002F"
+					consume_items: true
+					item: "minecraft:coal_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000030"
+					consume_items: true
+					item: "minecraft:iron_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000031"
+					consume_items: true
+					item: "minecraft:copper_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000032"
+					consume_items: true
+					item: "minecraft:gold_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000033"
+					consume_items: true
+					item: "minecraft:redstone_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000034"
+					consume_items: true
+					item: "minecraft:lapis_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000035"
+					consume_items: true
+					item: "minecraft:diamond_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000036"
+					consume_items: true
+					item: "minecraft:emerald_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000037"
+					consume_items: true
+					item: "minecraft:nether_quartz_ore"
+					type: "item"
+				}
+				{
+					id: "4F00600000000038"
+					consume_items: true
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+			]
+			title: "Every Ore"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F00500000000022"
+				"4F00500000000023"
+			]
+			description: ["Craft the World Breaker."]
+			icon: "avaritia:infinity_pickaxe"
+			id: "4F00500000000024"
+			rewards: [{
+				id: "4F00700000000024"
+				item: "avaritia:infinity_pickaxe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F0060000000003A"
+				title: "I bestow upon thee the power to break worlds."
+				type: "checkmark"
+			}]
+			title: "World Breaker"
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Shovel."]
+			icon: "draconicevolution:chaotic_shovel"
+			id: "4F00500000000025"
+			tasks: [{
+				id: "4F0060000000003B"
+				consume_items: true
+				item: "draconicevolution:chaotic_shovel"
+				type: "item"
+			}]
+			title: "Chaotic Shovel"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F00500000000025"]
+			description: ["Gather symbolic earth, sand, and loose ground."]
+			icon: "minecraft:dirt"
+			id: "4F00500000000026"
+			tasks: [
+				{
+					id: "4F0060000000003C"
+					consume_items: true
+					count: 64L
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "4F0060000000003D"
+					consume_items: true
+					count: 64L
+					item: "minecraft:grass_block"
+					type: "item"
+				}
+				{
+					id: "4F0060000000003E"
+					consume_items: true
+					count: 64L
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "4F0060000000003F"
+					consume_items: true
+					count: 64L
+					item: "minecraft:red_sand"
+					type: "item"
+				}
+				{
+					id: "4F00600000000040"
+					consume_items: true
+					count: 64L
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "4F00600000000041"
+					consume_items: true
+					count: 64L
+					item: "minecraft:clay"
+					type: "item"
+				}
+				{
+					id: "4F00600000000042"
+					consume_items: true
+					count: 64L
+					item: "minecraft:mud"
+					type: "item"
+				}
+				{
+					id: "4F00600000000043"
+					consume_items: true
+					count: 64L
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "4F00600000000044"
+					consume_items: true
+					count: 64L
+					item: "minecraft:snow_block"
+					type: "item"
+				}
+			]
+			title: "The Ground Itself"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F00500000000025"
+				"4F00500000000026"
+			]
+			description: ["Craft the Planet Eater."]
+			icon: "avaritia:infinity_shovel"
+			id: "4F00500000000027"
+			rewards: [{
+				id: "4F00700000000027"
+				item: "avaritia:infinity_shovel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000045"
+				title: "I bestow upon thee the power to devour planets."
+				type: "checkmark"
+			}]
+			title: "Planet Eater"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Axe."]
+			icon: "draconicevolution:chaotic_axe"
+			id: "4F00500000000028"
+			tasks: [{
+				id: "4F00600000000046"
+				consume_items: true
+				item: "draconicevolution:chaotic_axe"
+				type: "item"
+			}]
+			title: "Chaotic Axe"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F00500000000028"]
+			description: ["Gather symbolic wood types."]
+			icon: "minecraft:oak_log"
+			id: "4F00500000000029"
+			tasks: [
+				{
+					id: "4F00600000000047"
+					consume_items: true
+					count: 64L
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "4F00600000000048"
+					consume_items: true
+					count: 64L
+					item: "minecraft:spruce_log"
+					type: "item"
+				}
+				{
+					id: "4F00600000000049"
+					consume_items: true
+					count: 64L
+					item: "minecraft:birch_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004A"
+					consume_items: true
+					count: 64L
+					item: "minecraft:jungle_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004B"
+					consume_items: true
+					count: 64L
+					item: "minecraft:acacia_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004C"
+					consume_items: true
+					count: 64L
+					item: "minecraft:dark_oak_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004D"
+					consume_items: true
+					count: 64L
+					item: "minecraft:mangrove_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004E"
+					consume_items: true
+					count: 64L
+					item: "minecraft:cherry_log"
+					type: "item"
+				}
+				{
+					id: "4F0060000000004F"
+					consume_items: true
+					count: 64L
+					item: "minecraft:crimson_stem"
+					type: "item"
+				}
+				{
+					id: "4F00600000000050"
+					consume_items: true
+					count: 64L
+					item: "minecraft:warped_stem"
+					type: "item"
+				}
+			]
+			title: "Every Wood"
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F00500000000028"
+				"4F00500000000029"
+			]
+			description: ["Craft Nature's Ruin."]
+			icon: "avaritia:infinity_axe"
+			id: "4F0050000000002A"
+			rewards: [{
+				id: "4F0070000000002A"
+				item: "avaritia:infinity_axe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000051"
+				title: "I bestow upon thee the power to end forests."
+				type: "checkmark"
+			}]
+			title: "Nature's Ruin"
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000001B"]
+			description: ["Sacrifice the Chaotic Bow. This opens both Infinity ranged paths."]
+			icon: "draconicevolution:chaotic_bow"
+			id: "4F0050000000002B"
+			tasks: [{
+				id: "4F00600000000052"
+				consume_items: true
+				item: "draconicevolution:chaotic_bow"
+				type: "item"
+			}]
+			title: "Chaotic Bow"
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F0050000000002B"]
+			description: ["Submit a stack of hostile mob drops for the Longbow path."]
+			icon: "minecraft:bone"
+			id: "4F0050000000002C"
+			tasks: [
+				{
+					id: "4F00600000000053"
+					consume_items: true
+					count: 64L
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "4F00600000000054"
+					consume_items: true
+					count: 64L
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "4F00600000000055"
+					consume_items: true
+					count: 64L
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "4F00600000000056"
+					consume_items: true
+					count: 64L
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "4F00600000000058"
+					consume_items: true
+					count: 64L
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "4F00600000000059"
+					consume_items: true
+					count: 16L
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005A"
+					consume_items: true
+					count: 64L
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005B"
+					consume_items: true
+					count: 64L
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005C"
+					consume_items: true
+					count: 16L
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005D"
+					consume_items: true
+					count: 64L
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005E"
+					consume_items: true
+					count: 16L
+					item: "minecraft:phantom_membrane"
+					type: "item"
+				}
+				{
+					id: "4F0060000000005F"
+					consume_items: true
+					count: 16L
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+			]
+			title: "Hostile Mob Drops"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F0050000000002B"
+				"4F0050000000002C"
+			]
+			description: ["Craft the Longbow of the Heavens."]
+			icon: "avaritia:infinity_bow"
+			id: "4F0050000000002D"
+			rewards: [{
+				id: "4F0070000000002D"
+				item: "avaritia:infinity_bow"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000057"
+				title: "I bestow upon thee the power to strike from heaven."
+				type: "checkmark"
+			}]
+			title: "Longbow of the Heavens"
+			x: 6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4F0050000000002B"]
+			description: ["Submit every main arrow type and a flight duration 3 firework rocket for the crossbow path."]
+			icon: "minecraft:firework_rocket"
+			id: "4F0050000000002F"
+			tasks: [
+				{
+					id: "4F00600000000062"
+					consume_items: true
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "4F00600000000063"
+					consume_items: true
+					item: "minecraft:spectral_arrow"
+					type: "item"
+				}
+				{
+					id: "4F00600000000064"
+					consume_items: true
+					item: {
+						Count: 1
+						id: "minecraft:tipped_arrow"
+						tag: {Potion: "minecraft:harming"}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4F00600000000065"
+					consume_items: true
+					item: {
+						Count: 1
+						id: "minecraft:tipped_arrow"
+						tag: {Potion: "minecraft:poison"}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4F00600000000066"
+					consume_items: true
+					item: {
+						Count: 1
+						id: "minecraft:tipped_arrow"
+						tag: {Potion: "minecraft:slowness"}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4F00600000000067"
+					consume_items: true
+					item: {
+						Count: 1
+						id: "minecraft:tipped_arrow"
+						tag: {Potion: "minecraft:weakness"}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4F00600000000068"
+					consume_items: true
+					item: {
+						Count: 1
+						id: "minecraft:firework_rocket"
+						tag: {Fireworks: {Flight: 3b}}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "Every Arrow"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4F0050000000002B"
+				"4F0050000000002F"
+			]
+			description: ["Craft the Crossbow of the Inferno."]
+			icon: "avaritia:infinity_crossbow"
+			id: "4F00500000000030"
+			rewards: [{
+				id: "4F00700000000030"
+				item: "avaritia:infinity_crossbow"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000072"
+				title: "I bestow upon thee the power to rain fire."
+				type: "checkmark"
+			}]
+			title: "Crossbow of the Inferno"
+			x: 9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"4F0050000000001E"
+				"4F00500000000021"
+				"4F00500000000024"
+				"4F00500000000027"
+				"4F0050000000002A"
+				"4F0050000000002D"
+				"4F00500000000030"
+			]
+			description: ["You can kill everything, but you are not unkillable yet."]
+			icon: "avaritia:infinity_totem"
+			id: "4F00500000000031"
+			tasks: [{
+				id: "4F0060000000007C"
+				title: "The tools are complete"
+				type: "checkmark"
+			}]
+			title: "Not Yet Unkillable"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4F00500000000031"]
+			description: ["Submit a Netherite Helmet and a Nether Star, then craft the Infinity Helmet."]
+			icon: "avaritia:infinity_helmet"
+			id: "4F00500000000032"
+			rewards: [{
+				id: "4F00700000000032"
+				item: "avaritia:infinity_helmet"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F0060000000007D"
+					consume_items: true
+					item: "minecraft:netherite_helmet"
+					type: "item"
+				}
+				{
+					id: "4F0060000000007E"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Infinity Helmet"
+			x: -4.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4F00500000000031"]
+			description: ["Submit a Netherite Chestplate and a Nether Star, then craft the Infinity Chestplate."]
+			icon: "avaritia:infinity_chestplate"
+			id: "4F00500000000033"
+			rewards: [{
+				id: "4F00700000000033"
+				item: "avaritia:infinity_chestplate"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F0060000000007F"
+					consume_items: true
+					item: "minecraft:netherite_chestplate"
+					type: "item"
+				}
+				{
+					id: "4F00600000000080"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Infinity Chestplate"
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4F00500000000031"]
+			description: ["Submit Netherite Leggings and a Nether Star, then craft the Infinity Leggings."]
+			icon: "avaritia:infinity_pants"
+			id: "4F00500000000034"
+			rewards: [{
+				id: "4F00700000000034"
+				item: "avaritia:infinity_pants"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F00600000000081"
+					consume_items: true
+					item: "minecraft:netherite_leggings"
+					type: "item"
+				}
+				{
+					id: "4F00600000000082"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Infinity Leggings"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4F00500000000031"]
+			description: ["Submit Netherite Boots and a Nether Star, then craft the Infinity Boots."]
+			icon: "avaritia:infinity_boots"
+			id: "4F00500000000035"
+			rewards: [{
+				id: "4F00700000000035"
+				item: "avaritia:infinity_boots"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F00600000000083"
+					consume_items: true
+					item: "minecraft:netherite_boots"
+					type: "item"
+				}
+				{
+					id: "4F00600000000084"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Infinity Boots"
+			x: 2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4F00500000000031"]
+			description: ["Submit an Elytra and a Nether Star, then craft the Infinity Elytra."]
+			icon: "avaritia:infinity_elytra"
+			id: "4F00500000000036"
+			rewards: [{
+				id: "4F00700000000036"
+				item: "avaritia:infinity_elytra"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F00600000000085"
+					consume_items: true
+					item: "minecraft:elytra"
+					type: "item"
+				}
+				{
+					id: "4F00600000000086"
+					consume_items: true
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "Infinity Elytra"
+			x: 4.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"4F00500000000032"
+				"4F00500000000033"
+				"4F00500000000034"
+				"4F00500000000035"
+				"4F00500000000036"
+			]
+			description: ["Accept the utility of infinity."]
+			icon: "avaritia:infinity_clock"
+			id: "4F00500000000037"
+			rewards: [
+				{
+					id: "4F00700000000037"
+					item: "avaritia:infinity_clock"
+					type: "item"
+				}
+				{
+					id: "4F00700000000038"
+					item: "avaritia:infinity_chest"
+					type: "item"
+				}
+				{
+					id: "4F00700000000039"
+					item: "avaritia:infinity_bucket"
+					type: "item"
+				}
+				{
+					id: "4F0070000000003A"
+					item: "avaritia:infinity_umbrella"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F00600000000087"
+				title: "I accept God's wrath."
+				type: "checkmark"
+			}]
+			title: "God's Wrath"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["4F00500000000037"]
+			description: ["Accept true immortality."]
+			icon: "avaritia:infinity_totem"
+			id: "4F00500000000038"
+			rewards: [{
+				id: "4F0070000000003B"
+				item: "avaritia:infinity_totem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F00600000000088"
+				title: "I accept true immortality."
+				type: "checkmark"
+			}]
+			title: "True Immortality"
+			x: 0.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["4F00500000000038"]
+			description: ["True Legend complete. The modpack is complete."]
+			icon: "avaritia:infinity_catalyst"
+			id: "4F00500000000039"
+			tasks: [{
+				id: "4F00600000000089"
+				title: "I have completed Magic Overtech."
+				type: "checkmark"
+			}]
+			title: "True Legend Complete"
+			x: 0.0d
+			y: -20.0d
+		}
+	]
+	title: "True Legend"
+}

@@ -1,0 +1,12 @@
+name = "project-1447219"
+filename = "domesticationinnovation_whitelist-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7540/479/domesticationinnovation_whitelist-1.0.0.jar"
+hash-format = "sha1"
+hash = "7bd4d741c1005926cac487a8934628db558f23e8"
+
+[update.curseforge]
+file-id = 7540479
+project-id = 1447219

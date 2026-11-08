@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:small_end_islands",
+    "far_end:the_nest",
+    "far_end:ender_waste"
+  ]
+}

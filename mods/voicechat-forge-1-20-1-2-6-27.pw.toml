@@ -1,0 +1,8 @@
+name = "voicechat-forge-1.20.1-2.6.27.jar"
+filename = "voicechat-forge-1.20.1-2.6.27.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9eGKb6K1/versions/IZvGk7Np/voicechat-forge-1.20.1-2.6.27.jar"
+hash-format = "sha1"
+hash = "08f976516021a38a95cf121bf9ff439af386e385"

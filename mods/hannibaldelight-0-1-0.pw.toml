@@ -1,0 +1,8 @@
+name = "hannibaldelight-0.1.0.jar"
+filename = "hannibaldelight-0.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KnL6vCgL/versions/SRuwmBwE/hannibaldelight-0.1.0.jar"
+hash-format = "sha1"
+hash = "7cacd1244487679251c76e4c3694288fe1ad43e3"

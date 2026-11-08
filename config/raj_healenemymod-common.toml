@@ -1,0 +1,9 @@
+
+["Configs for Sword Mod"]
+	#How many blocks in each direction from the dead player should the heal affect
+	"Heal Radius" = 100
+	#Should the heal amount depend on how many nearby players there are?(Heal percentage is deadplayer/nearbyPlayers)
+	Multiplayer = true
+	#In Singleplayer Mode(this config not the gamemode) what percentage of maxhealth should a mob heal?
+	"Singleplayer Heal Percentage" = 100
+

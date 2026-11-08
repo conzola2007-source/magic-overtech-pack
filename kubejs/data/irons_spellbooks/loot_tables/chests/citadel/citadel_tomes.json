@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "lore.citadel_book.title",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

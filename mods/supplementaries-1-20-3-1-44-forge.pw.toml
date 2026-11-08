@@ -1,0 +1,12 @@
+name = "Supplementaries"
+filename = "supplementaries-1.20-3.1.44-forge.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9140/345/supplementaries-1.20-3.1.44-forge.jar"
+hash-format = "sha1"
+hash = "01e9bd4c264c6e04c7613095438bf0eee657b16f"
+
+[update.curseforge]
+file-id = 9140345
+project-id = 412082

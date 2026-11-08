@@ -1,0 +1,12 @@
+name = "Mighty Mail"
+filename = "mighty_mail-forge-1.20.1-1.1.4.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/6777/569/mighty_mail-forge-1.20.1-1.1.4.jar"
+hash-format = "sha1"
+hash = "43af108f39831eb75280b63e0819a1b1176abda8"
+
+[update.curseforge]
+file-id = 6777569
+project-id = 902986

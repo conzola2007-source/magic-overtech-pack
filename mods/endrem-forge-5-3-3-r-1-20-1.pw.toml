@@ -1,0 +1,12 @@
+name = "End Remastered [NeoForge/Fabric]"
+filename = "endrem_forge-5.3.3-R-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/5598/990/endrem_forge-5.3.3-R-1.20.1.jar"
+hash-format = "sha1"
+hash = "b4df41de8439e834a493fe59842709ef33ecfa82"
+
+[update.curseforge]
+file-id = 5598990
+project-id = 404183

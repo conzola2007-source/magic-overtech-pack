@@ -1,0 +1,12 @@
+name = "Iron's Lib"
+filename = "irons_lib-1.20.1-2.3.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9328/58/irons_lib-1.20.1-2.3.0.jar"
+hash-format = "sha1"
+hash = "3a6fecda42c8469580ee82d80c0bedcec775a150"
+
+[update.curseforge]
+file-id = 9328058
+project-id = 1492763

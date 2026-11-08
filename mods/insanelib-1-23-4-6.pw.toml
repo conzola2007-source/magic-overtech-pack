@@ -1,0 +1,12 @@
+name = "InsaneLib"
+filename = "insanelib-1.23.4.6.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8306/331/insanelib-1.23.4.6.jar"
+hash-format = "sha1"
+hash = "cca086a7ff34c4ffadb3caf3e825acb87f7e7322"
+
+[update.curseforge]
+file-id = 8306331
+project-id = 465109
