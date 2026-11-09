@@ -1104,34 +1104,6 @@ file = "kubejs/config/common.properties"
 hash = "ec327caedcb5e061f406f449e4d6062c83dbc28f0b938a44f5e18e5b4397628c"
 
 [[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/cindervane.json"
-hash = "bf0f54f1c320899f74567c6f36b20e4e5da7d39abbdd49f93d00b6969c7909cf"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/ignivorus.json"
-hash = "7aab28f01a91993fcc610724e9845747dc2a0d46f85a2088c5a3057ae844ca99"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/nulljaw.json"
-hash = "717b45a15e5f9fb9fb7e3d687efe61a9a26f318ffa5a8247f3af3a33b43c2ba4"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/raevyx.json"
-hash = "9e79c42a5199062ef5be4eb539e29007cc577ca8c2d184ad5a78d3860e49a95e"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/stegonaut.json"
-hash = "037d3c093d3b01b35cb0e44883f19219c429f6b45714da07828e2bbe859b3ff8"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/varasuchus.json"
-hash = "6c05a948ad2dfd63badf06f3f00d2808b0f357ee5099c9ab5ce2656483382fe8"
-
-[[files]]
-file = "kubejs/data/apotheosis/bosses/magic_overtech/volitans.json"
-hash = "380a634241a2fed098ba0f659d515cdd37d3b67fa5ede55ac914777053b94ae1"
-
-[[files]]
 file = "kubejs/data/apotheotic_additions/recipes/material/ancient_crushing.json"
 hash = "9efb02382b3e1eb22fb8b36bc8f00a5f7a94faf6bdc3eed9817f4c90f88bc63c"
 
