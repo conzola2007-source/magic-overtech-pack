@@ -26,12 +26,13 @@ const SB_ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 const SB_StringTag = Java.loadClass('net.minecraft.nbt.StringTag')
 const SB_ItemsReg = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 
-// Not stack.hasTag(): KubeJS shadows it with hasTag(id), the item tag check, so
-// the no-argument call throws. That killed death drops whenever a Curios slot was
-// filled (fixed 2026-11-06).
+// getNbt(), not getTag()/hasTag(): KubeJS's ItemStackMixin remaps vanilla
+// getTag -> getNbt, hasTag -> hasNBT, setTag -> setNbt for scripts, so getTag()
+// doesn't exist here and threw on every stack (anvil gave no result, Soulbound
+// never applied). Fixed 2026-11-14, checked in kubejs-forge-2001.6.5-build.26.
 function sbIsSoulbound(stack) {
   if (!stack || stack.isEmpty()) return false
-  var nbt = stack.getTag()
+  var nbt = stack.getNbt()
   return nbt != null && nbt.getBoolean(SB_TAG) == true
 }
 
