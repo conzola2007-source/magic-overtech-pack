@@ -1911,6 +1911,11 @@ hash = "d97018f12d49da13ad8db949765aec86d8a01e4e4c0aa458af60e8ff71173601"
 metafile = true
 
 [[files]]
+file = "mods/keyboard-wizard-ce-forge-1-20-1-1-0-1.pw.toml"
+hash = "6f6489d197e11294fe2862107fd92e34e2f54049b101221647eaef02c3cb4969"
+metafile = true
+
+[[files]]
 file = "mods/konkrete-forge-1-8-0-mc-1-20-1-20-1.pw.toml"
 hash = "836154ca3efdd7bf7a68194f8c60fa9d8b9081714715d046d511a3b8d33eeb10"
 metafile = true

@@ -1,0 +1,8 @@
+name = "keyboard-wizard-ce-forge-1.20.1-1.0.1.jar"
+filename = "keyboard-wizard-ce-forge-1.20.1-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/K9lejUXc/versions/GYm07Vbx/keyboard-wizard-ce-forge-1.20.1-1.0.1.jar"
+hash-format = "sha1"
+hash = "58b89a98229765081786d86aca9605972be2a193"
