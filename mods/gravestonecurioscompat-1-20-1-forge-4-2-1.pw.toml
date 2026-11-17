@@ -1,0 +1,8 @@
+name = "gravestonecurioscompat-1.20.1-Forge-4.2.1.jar"
+filename = "gravestonecurioscompat-1.20.1-Forge-4.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/NaiL8bPN/versions/7AyO4kKS/gravestonecurioscompat-1.20.1-Forge-4.2.1.jar"
+hash-format = "sha1"
+hash = "9833dac61f4b00f0624de781d3702ea32df27329"

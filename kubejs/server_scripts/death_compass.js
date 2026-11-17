@@ -1,5 +1,5 @@
 // After a death, the player respawns with a Recovery Compass, which points at
-// where they last died (vanilla tracks that). For players who don't read
+// where they last died (vanilla tracks that), which is where their grave is. For players who don't read
 // coordinates (Moe, 2026-11-08). Pairs with death_coordinates.js.
 //
 // Only one: none is given if they already carry a Recovery Compass. Not given

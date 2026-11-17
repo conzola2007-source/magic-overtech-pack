@@ -12,6 +12,11 @@
 // ALWAYS_KEEP override for Soulbound stacks, so they just stay in their slot.
 // Backpacks: see the backpack rule above the death handler (keep the gear,
 // lose the loot).
+// Gravestones (2026-11-17): GraveStone (henkelmax) collects the drops at LOWEST
+// priority, after this handler, so Soulbound stacks are already gone and never
+// land in the grave. Loot pulled out of a Soulbound backpack is added to the
+// drops so it goes into the grave too. Soulbound items come back into the slot
+// they were in (recorded on LivingDeathEvent, read nothing else).
 //
 // Cost: anvil event fires only when an anvil's slots change; drops only on a
 // player death; respawn only on respawn. No tick, no polling.
@@ -25,6 +30,11 @@ const SB_CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const SB_ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 const SB_StringTag = Java.loadClass('net.minecraft.nbt.StringTag')
 const SB_ItemsReg = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+const SB_ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
+const SB_SLOT = 'MOSlot'
+// player uuid -> [{slot, stack copy}] of Soulbound items, set on death, used by
+// the drops handler right after to remember where each one sat.
+const SB_Slots = {}
 
 // getNbt(), not getTag()/hasTag(): KubeJS's ItemStackMixin remaps vanilla
 // getTag -> getNbt, hasTag -> hasNBT, setTag -> setNbt for scripts, so getTag()
@@ -127,6 +137,35 @@ function sbSortBackpack(stack, bound, stash, loot, depth) {
   }
 }
 
+// Only remembers where Soulbound items sit; changes nothing, so a revive mod
+// cancelling the death later is harmless (the entry is replaced next death).
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDeathEvent', event => {
+  var player = event.getEntity()
+  if (!player || !player.isPlayer()) return
+  try {
+    var inv = player.getInventory()
+    var list = []
+    for (var i = 0; i < inv.getContainerSize(); i++) {
+      var st = inv.getItem(i)
+      if (sbIsSoulbound(st)) list.push({ slot: i, stack: st.copy() })
+    }
+    SB_Slots[String(player.getUUID())] = list
+  } catch (err) {
+    console.error('soulbound slot record failed: ' + err)
+  }
+})
+
+function sbTakeSlot(slots, stack) {
+  for (var i = 0; i < slots.length; i++) {
+    if (SB_ItemStack.matches(slots[i].stack, stack)) {
+      var s = slots[i].slot
+      slots.splice(i, 1)
+      return s
+    }
+  }
+  return -1
+}
+
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', event => {
   var player = event.getEntity()
   if (!player || !player.isPlayer()) return
@@ -136,6 +175,9 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', e
     var stash = persisted.contains(SB_KEY, 9) ? persisted.getList(SB_KEY, 10) : new SB_ListTag()
     var before = stash.size()
     var loot = []
+    var uuid = String(player.getUUID())
+    var slots = SB_Slots[uuid] || []
+    delete SB_Slots[uuid]
 
     // Backpacks still in Curios slots (Soulbound ones stay there).
     try {
@@ -159,12 +201,19 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', e
       var sb = sbIsSoulbound(stack)
       sbSortBackpack(stack, sb, stash, loot, 0)
       if (!sb) continue
-      stash.add(stack.save(new SB_CompoundTag()))
+      var saved = stack.save(new SB_CompoundTag())
+      saved.putInt(SB_SLOT, sbTakeSlot(slots, stack))
+      stash.add(saved)
       it.remove()
       drop.discard()
     }
 
-    for (var l = 0; l < loot.length; l++) player.drop(loot[l], true, false)
+    // Into the drops, so the gravestone takes it (it lands on the ground if no grave mod).
+    for (var l = 0; l < loot.length; l++) {
+      var ent = new SB_ItemEntity(player.getCommandSenderWorld(), player.getX(), player.getY(), player.getZ(), loot[l])
+      ent.setDefaultPickUpDelay()
+      event.getDrops().add(ent)
+    }
 
     if (stash.size() === before) return
     persisted.put(SB_KEY, stash)
@@ -181,10 +230,19 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerRe
     var persisted = data.getCompound('PlayerPersisted')
     if (!persisted.contains(SB_KEY, 9)) return
     var stash = persisted.getList(SB_KEY, 10)
+    var inv = player.getInventory()
+    var later = []
+    // First every item into its old slot, then the rest wherever there is room.
     for (var i = 0; i < stash.size(); i++) {
-      var stack = SB_ItemStack.of(stash.getCompound(i))
+      var tag = stash.getCompound(i)
+      var slot = tag.contains(SB_SLOT) ? tag.getInt(SB_SLOT) : -1
+      var stack = SB_ItemStack.of(tag)
       if (stack.isEmpty()) continue
-      if (!player.getInventory().add(stack)) player.drop(stack, false)
+      if (slot >= 0 && slot < inv.getContainerSize() && inv.getItem(slot).isEmpty()) inv.setItem(slot, stack)
+      else later.push(stack)
+    }
+    for (var j = 0; j < later.length; j++) {
+      if (!inv.add(later[j])) player.drop(later[j], false)
     }
     persisted.remove(SB_KEY)
     data.put('PlayerPersisted', persisted)

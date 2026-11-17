@@ -1,0 +1,8 @@
+name = "gravestone-forge-1.20.1-1.0.35.jar"
+filename = "gravestone-forge-1.20.1-1.0.35.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/RYtXKJPr/versions/q9kZE5Xo/gravestone-forge-1.20.1-1.0.35.jar"
+hash-format = "sha1"
+hash = "9ec9da5da2a5884b6abff5f74a763a4f3e54fa38"
