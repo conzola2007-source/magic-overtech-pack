@@ -6,7 +6,7 @@
 // Anvil: any single (non-stackable) item + 1 Echo Shard -> the same item marked
 // Soulbound (NBT MOSoulbound + a lore line). 1 level, uses 1 shard.
 // Death: Soulbound stacks are pulled out of the death drops, kept in the
-// player's PlayerPersisted data (Forge copies that across death), and given back
+// player's KubeJS data (PlayerPersisted key), and given back
 // on respawn. Covers the normal inventory, armour and offhand.
 // Curios slots (rings, belts, worn backpacks): Curios' DropRulesEvent gets an
 // ALWAYS_KEEP override for Soulbound stacks, so they just stay in their slot.
@@ -236,30 +236,80 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', e
   }
 })
 
-ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerRespawnEvent', event => {
-  var player = event.getEntity()
-  try {
-    var data = player.getPersistentData()
-    var persisted = data.getCompound('PlayerPersisted')
-    if (!persisted.contains(SB_KEY, 9)) return
-    var stash = persisted.getList(SB_KEY, 10)
-    var inv = player.getInventory()
-    var later = []
-    // First every item into its old slot, then the rest wherever there is room.
-    for (var i = 0; i < stash.size(); i++) {
-      var tag = stash.getCompound(i)
-      var slot = tag.contains(SB_SLOT) ? tag.getInt(SB_SLOT) : -1
-      var stack = SB_ItemStack.of(tag)
-      if (stack.isEmpty()) continue
-      if (slot >= 0 && slot < inv.getContainerSize() && inv.getItem(slot).isEmpty()) inv.setItem(slot, stack)
-      else later.push(stack)
-    }
-    for (var j = 0; j < later.length; j++) {
-      if (!inv.add(later[j])) player.drop(later[j], false)
-    }
-    persisted.remove(SB_KEY)
-    data.put('PlayerPersisted', persisted)
-  } catch (err) {
-    console.error('soulbound respawn give-back failed: ' + err)
+// Give-back. getPersistentData() here is KubeJS's own player data
+// (KubeJSPersistentData in the player file), not Forge's, so Forge's
+// PlayerPersisted copy-on-respawn never applied: the respawned player had no
+// stash yet when PlayerRespawnEvent fired, nothing came back, and the stash
+// just piled up (found 2026-11-18, seven items in Sido's file). Now the stash
+// is read from the dead player in PlayerEvent.Clone and put straight into the
+// new player's inventory, and cleared on both so it can't be given twice.
+// Respawn and login give back anything still left (full inventory, or stashes
+// saved before this fix).
+function sbStashOf(player) {
+  var persisted = player.getPersistentData().getCompound('PlayerPersisted')
+  return persisted.contains(SB_KEY, 9) ? persisted.getList(SB_KEY, 10) : null
+}
+function sbClearStash(player) {
+  var data = player.getPersistentData()
+  var persisted = data.getCompound('PlayerPersisted')
+  if (!persisted.contains(SB_KEY)) return
+  persisted.remove(SB_KEY)
+  data.put('PlayerPersisted', persisted)
+}
+function sbSetStash(player, list) {
+  var data = player.getPersistentData()
+  var persisted = data.getCompound('PlayerPersisted')
+  persisted.put(SB_KEY, list)
+  data.put('PlayerPersisted', persisted)
+}
+// Puts stash items into the player's inventory, old slot first. Returns what didn't fit.
+function sbPlace(player, stash) {
+  var inv = player.getInventory()
+  var later = []
+  for (var i = 0; i < stash.size(); i++) {
+    var tag = stash.getCompound(i)
+    var slot = tag.contains(SB_SLOT) ? tag.getInt(SB_SLOT) : -1
+    var stack = SB_ItemStack.of(tag)
+    if (stack.isEmpty()) continue
+    if (slot >= 0 && slot < inv.getContainerSize() && inv.getItem(slot).isEmpty()) inv.setItem(slot, stack)
+    else later.push(stack)
   }
+  var left = new SB_ListTag()
+  for (var j = 0; j < later.length; j++) {
+    if (!inv.add(later[j])) left.add(later[j].save(new SB_CompoundTag()))
+  }
+  return left
+}
+
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$Clone', event => {
+  try {
+    if (!event.isWasDeath()) return
+    var oldP = event.getOriginal()
+    var newP = event.getEntity()
+    var stash = sbStashOf(oldP)
+    if (!stash || stash.size() === 0) return
+    var copy = stash.copy()
+    sbClearStash(oldP)
+    sbClearStash(newP)
+    var left = sbPlace(newP, copy)
+    if (left.size() > 0) sbSetStash(newP, left)
+  } catch (err) {
+    console.error('soulbound clone give-back failed: ' + err)
+  }
+})
+
+function sbFlush(player) {
+  var stash = sbStashOf(player)
+  if (!stash || stash.size() === 0) return
+  var copy = stash.copy()
+  sbClearStash(player)
+  var left = sbPlace(player, copy)
+  for (var k = 0; k < left.size(); k++) player.drop(SB_ItemStack.of(left.getCompound(k)), false)
+}
+
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerRespawnEvent', event => {
+  try { sbFlush(event.getEntity()) } catch (err) { console.error('soulbound respawn give-back failed: ' + err) }
+})
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$PlayerLoggedInEvent', event => {
+  try { sbFlush(event.getEntity()) } catch (err) { console.error('soulbound login give-back failed: ' + err) }
 })
