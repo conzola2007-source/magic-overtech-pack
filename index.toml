@@ -1457,7 +1457,7 @@ hash = "e0fb766d7c146094aa8405554bda4309b666f2001164784bcdf5fe1d6952f1ef"
 
 [[files]]
 file = "kubejs/startup_scripts/soulbound_any_item.js"
-hash = "7814263b1f5d83e07ccc666a06d82c74a7c3ae42a532f7a0053a2b5ddb4c5c12"
+hash = "730e9b8de88f61fd8d44820391422434118c0f68cfd6af96ca2ab9d1ee6a5679"
 
 [[files]]
 file = "mods/addonapi-mc1-20-1-2-1-0.pw.toml"

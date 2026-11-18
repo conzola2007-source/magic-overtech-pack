@@ -32,9 +32,12 @@ const SB_StringTag = Java.loadClass('net.minecraft.nbt.StringTag')
 const SB_ItemsReg = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 const SB_ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 const SB_SLOT = 'MOSlot'
-// player uuid -> [{slot, stack copy}] of Soulbound items, set on death, used by
-// the drops handler right after to remember where each one sat.
-const SB_Slots = {}
+// Where each Soulbound item sat, written to the player's own data on death and
+// read (then removed) by the drops handler right after. Not keyed by UUID:
+// player.getUUID() doesn't exist through KubeJS and threw on every death from
+// 2026-11-17 to 11-18, which killed the whole stash, so Soulbound items fell
+// into the grave. Not under PlayerPersisted, so it never survives respawn.
+const SB_SLOTS_KEY = 'MOSoulboundSlots'
 
 // getNbt(), not getTag()/hasTag(): KubeJS's ItemStackMixin remaps vanilla
 // getTag -> getNbt, hasTag -> hasNBT, setTag -> setNbt for scripts, so getTag()
@@ -144,12 +147,16 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDeathEvent', e
   if (!player || !player.isPlayer()) return
   try {
     var inv = player.getInventory()
-    var list = []
+    var list = new SB_ListTag()
     for (var i = 0; i < inv.getContainerSize(); i++) {
       var st = inv.getItem(i)
-      if (sbIsSoulbound(st)) list.push({ slot: i, stack: st.copy() })
+      if (!sbIsSoulbound(st)) continue
+      var entry = new SB_CompoundTag()
+      entry.putInt('s', i)
+      entry.put('i', st.save(new SB_CompoundTag()))
+      list.add(entry)
     }
-    SB_Slots[String(player.getUUID())] = list
+    player.getPersistentData().put(SB_SLOTS_KEY, list)
   } catch (err) {
     console.error('soulbound slot record failed: ' + err)
   }
@@ -175,9 +182,15 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDropsEvent', e
     var stash = persisted.contains(SB_KEY, 9) ? persisted.getList(SB_KEY, 10) : new SB_ListTag()
     var before = stash.size()
     var loot = []
-    var uuid = String(player.getUUID())
-    var slots = SB_Slots[uuid] || []
-    delete SB_Slots[uuid]
+    var slots = []
+    if (data.contains(SB_SLOTS_KEY, 9)) {
+      var rec = data.getList(SB_SLOTS_KEY, 10)
+      for (var r = 0; r < rec.size(); r++) {
+        var e = rec.getCompound(r)
+        slots.push({ slot: e.getInt('s'), stack: SB_ItemStack.of(e.getCompound('i')) })
+      }
+      data.remove(SB_SLOTS_KEY)
+    }
 
     // Backpacks still in Curios slots (Soulbound ones stay there).
     try {
