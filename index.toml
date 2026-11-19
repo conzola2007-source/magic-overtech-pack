@@ -1670,6 +1670,11 @@ hash = "785c75409191a56a16a620096abb50d60fbd5848bad693e2816fb56ef783a391"
 metafile = true
 
 [[files]]
+file = "mods/create-central-kitchen-1-20-1-for-create-6-0-8-1-5-1.pw.toml"
+hash = "2cc034b4a86f1bbeaa322c1973e25db858cb43b88bcb1c9870196a3d2f1e6bf2"
+metafile = true
+
+[[files]]
 file = "mods/create-connected-1-2-3-mc1-20-1-all.pw.toml"
 hash = "6572f49101252063bc79e6080f0eef2f7c8e1161b819d9997b670a41a1449aca"
 metafile = true
