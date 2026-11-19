@@ -317,6 +317,10 @@ file = "config/create_connected-common.toml"
 hash = "da6272e94f2fff7127bf4807028b6b6f3f34f2eabf031c3e789c5ca1679c58ad"
 
 [[files]]
+file = "config/createaddition-common.toml"
+hash = "769f83a44bca6e49ceca9ef045d0a495cb842b6f9d94deb06615272ca0a367b2"
+
+[[files]]
 file = "config/cristellib/minecraftED.json5"
 hash = "8e01cc9b7e46f74fd60ce36d3459628b8198cb988051ae52f14cda36ef0fd869"
 
