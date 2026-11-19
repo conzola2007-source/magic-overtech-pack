@@ -13,7 +13,7 @@
 			description: [
 				"Draconic Evolution is an advanced mod. The questbook is a proof path, not a full manual."
 				"Use Draconic's in-game guide for machine layout, fusion placement, modules, charging, and reactor details."
-				"Magic Overtech's special rule is energy: Create Crafts & Additions has been tuned so Alternators can produce serious FE. They are intended to help power Draconic progression in this pack."
+				"Magic Overtech's special rule is energy: the Draconic Generator has been tuned to put out about 100 times its normal power. Feed it coal or any furnace fuel and it covers Fusion Crafting, charging and the energy core. Create Alternators are back to their normal output."
 				"Dragon Hearts can exist before this stage, but the rest of Draconic opens here."
 			]
 			icon: "draconicevolution:info_tablet"
@@ -43,6 +43,24 @@
 			title: "Draconium Ingot"
 			x: -8.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3D00500000000002"]
+			description: [
+				"Build a Draconic Generator. This is the pack's power source for everything Draconic."
+				"In Magic Overtech it makes about 100 times its normal output: up to 30,000 OP/t on Performance+, with the same burn time per fuel as normal."
+				"Eco modes stretch your fuel; Performance modes push out the most power. Pipe it into your Energy Core or straight into the Fusion setup."
+			]
+			icon: "draconicevolution:generator"
+			id: "3D00500000000020"
+			tasks: [{
+				id: "3D00600000000020"
+				item: "draconicevolution:generator"
+				type: "item"
+			}]
+			title: "Draconic Generator"
+			x: -8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3D00500000000002"]
