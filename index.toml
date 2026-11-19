@@ -1580,6 +1580,11 @@ hash = "f8b8b84e1e0f33a16bf84483fb190d84e271dd6d24be88a3b791880a24146eac"
 metafile = true
 
 [[files]]
+file = "mods/cc-tweaked-1-20-1-forge-1-121-0.pw.toml"
+hash = "096ebeeb9eade65ad1dffaeb5a48869d5c59878c161a20b1cd0efa95616c95b4"
+metafile = true
+
+[[files]]
 file = "mods/cerbonsapi-forge-1-20-1-1-0-0.pw.toml"
 hash = "7e701c39f58ad936cd29eae89441ef7884f73664ec4ea23f6a6132c6c886b603"
 metafile = true
@@ -1660,6 +1665,11 @@ hash = "23af7a3dddaff72c548f61477d028a9a9963fa30e27b64b0b8eb389013edf9f4"
 metafile = true
 
 [[files]]
+file = "mods/copycats-3-0-10-mc-1-20-1-forge.pw.toml"
+hash = "7ed772d86950af0f28a96951b1a2d16927e250473a5c036b3deff7c867db2ec5"
+metafile = true
+
+[[files]]
 file = "mods/coroutil-forge-1-20-1-1-3-7.pw.toml"
 hash = "8678461d7463ac27d5dc79d104078e431a27fcc2ecf9c97febe1a8521e96d0af"
 metafile = true
@@ -1677,6 +1687,11 @@ metafile = true
 [[files]]
 file = "mods/create-connected-1-2-3-mc1-20-1-all.pw.toml"
 hash = "6572f49101252063bc79e6080f0eef2f7c8e1161b819d9997b670a41a1449aca"
+metafile = true
+
+[[files]]
+file = "mods/create-quarry-1-20-1-1-1-0.pw.toml"
+hash = "7c4aa3e1add59afba23f47b90c5fbdb32a0fea426d785ff25d369f96c6e6f477"
 metafile = true
 
 [[files]]
@@ -2316,6 +2331,11 @@ metafile = true
 [[files]]
 file = "mods/watut-forge-1-20-1-1-2-3.pw.toml"
 hash = "16bad5e3dea8e31bfcbad72c3c31ccb9f44c898fde6b3a83d77a7b543ac08467"
+metafile = true
+
+[[files]]
+file = "mods/worldshaper-utilities-3-0-0-mc1-20-1-forge.pw.toml"
+hash = "e4545a3c17ea2ab6041fbe3cfa675d8897ca39a53ab8c777a90ee6c2260ebe52"
 metafile = true
 
 [[files]]

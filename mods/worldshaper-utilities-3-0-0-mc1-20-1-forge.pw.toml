@@ -1,0 +1,8 @@
+name = "worldshaper-utilities-3.0.0+mc1.20.1-forge.jar"
+filename = "worldshaper-utilities-3.0.0+mc1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/BAULa3SQ/versions/6W9Z8w8z/worldshaper-utilities-3.0.0%2Bmc1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "209b5d1a9dce4a92fb2705657e96ffd4c4ca1634"

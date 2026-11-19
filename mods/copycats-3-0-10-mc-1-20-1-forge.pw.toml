@@ -1,0 +1,8 @@
+name = "copycats-3.0.10+mc.1.20.1-forge.jar"
+filename = "copycats-3.0.10+mc.1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UT2M39wf/versions/LlMxIysb/copycats-3.0.10%2Bmc.1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "939d4ca4ac42b93c05a5fb92e629fb8cff060dc9"
